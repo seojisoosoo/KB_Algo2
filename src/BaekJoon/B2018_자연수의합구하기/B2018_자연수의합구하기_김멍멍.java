@@ -1,8 +1,8 @@
-package Day1;
+package Baekjoon.B2018_자연수의합구하기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-public class B2018_자연수의합구하기 {
+public class B2018_자연수의합구하기_김멍멍 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(reader.readLine());
