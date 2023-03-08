@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class B10806_개수세기 {
+public class B10806_개수세기_정답 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 	
 		// 입력 처리 //
