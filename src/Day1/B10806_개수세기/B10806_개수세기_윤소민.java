@@ -2,7 +2,7 @@ package Day1.B10806_°³¼ö¼¼±â;
 
 import java.util.Scanner;
 
-public class B10807_°³¼ö¼¼±â_À±¼Ò¹Î {
+public class B10806_°³¼ö¼¼±â_À±¼Ò¹Î {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
