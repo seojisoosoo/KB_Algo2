@@ -1,4 +1,4 @@
-package Day01.B10806_개수세기;
+package Day1.B10806_개수세기;
 /*\
 문제
 총 N개의 정수가 주어졌을 때, 정수 v가 몇 개인지 구하는 프로그램을 작성하시오.
@@ -25,7 +25,7 @@ package Day01.B10806_개수세기;
  */
 import java.util.Scanner;
 
-public class B10806_개수세기_박창현 {
+public class B10806_개수세기_박창현 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String first = sc.nextLine();
