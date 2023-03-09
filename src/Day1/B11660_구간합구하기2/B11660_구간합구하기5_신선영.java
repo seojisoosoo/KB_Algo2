@@ -19,17 +19,7 @@ public class B11660_구간합구하기5_신선영 {
             st = new StringTokenizer(br.readLine());
             for (int j = 0; j < N; j++) {
                 int n = Integer.parseInt(st.nextToken());
-                if (i == 0 && j == 0) {
-                    arr[i + 1][j + 1] = n;
-                } else {
-                    if (i == 0) {
-                        arr[i + 1][j + 1] = arr[i + 1][j] + n;
-                    } else if (j == 0) {   // 첫 줄의 경우
-                        arr[i + 1][j + 1] = arr[i][j + 1] + n;
-                    } else {
-                        arr[i + 1][j + 1] = arr[i][j + 1] + arr[i + 1][j] - arr[i][j] + n;
-                    }
-                }
+                arr[i + 1][j + 1] = arr[i][j + 1] + arr[i + 1][j] - arr[i][j] + n;
             }
 
         }
