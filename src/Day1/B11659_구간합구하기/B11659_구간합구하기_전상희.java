@@ -1,4 +1,4 @@
-package Day1.B2018_수들의합;
+package Day1.B11659_구간합구하기;
 
 import java.io.BufferedReader;
 import java.io.IOException;
