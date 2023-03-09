@@ -25,7 +25,7 @@ package Day01.B10806_개수세기;
  */
 import java.util.Scanner;
 
-public class B10806_개수세기_박창현 {
+public class B10806_개수세기_박창현 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String first = sc.nextLine();
