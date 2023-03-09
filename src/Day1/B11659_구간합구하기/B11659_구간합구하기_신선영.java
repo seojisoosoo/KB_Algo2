@@ -1,5 +1,4 @@
-package day1;
-
+package Day1.B11659_구간합구하기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

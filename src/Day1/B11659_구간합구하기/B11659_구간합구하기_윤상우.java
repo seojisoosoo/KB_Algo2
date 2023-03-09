@@ -21,8 +21,8 @@ public class B11659_구간합구하기_윤상우 {
 			sum[0] = 0;
 			
 			StringTokenizer token2 = new StringTokenizer(bf.readLine(), " ");
-			sum[1] = Integer.parseInt(token2.nextToken());
-			for(int k=1; k<n; k++) {
+//			sum[1] = Integer.parseInt(token2.nextToken());
+			for(int k=0; k<n; k++) {
 				int num = Integer.parseInt(token2.nextToken());
 				sum[k+1] = sum[k] + num;
 			}
