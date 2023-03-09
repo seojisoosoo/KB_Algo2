@@ -6,12 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD:src/Day1/B11659_구간합구하기/B11659_구간합구하기_김원우.java
-public class B11659_구간합구하기_김원우 {
-=======
 public class B11659_구간합구하기4_김원우 {
->>>>>>> 7f6a9ea8aba15284cfc404adeb5c1aa3afb480bb:src/Day1/B2018_수들의합/B2018_수들의합_김원우.java
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
