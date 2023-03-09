@@ -1,11 +1,11 @@
-package Day1.B2018_수들의합;
+package Day1.B11659_구간합구하기;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class B2018_수들의합_조성환 {
+public class B11659_구간합구하기_조성환 {
 	/*
 	 * 첫째 줄에 수의 개수 N과 합을 구해야 하는 횟수 M이 주어진다. 둘째 줄에는 N개의 수가 주어진다. 수는 1,000보다 작거나 같은
 	 * 자연수이다. 셋째 줄부터 M개의 줄에는 합을 구해야 하는 구간 i와 j가 주어진다.
