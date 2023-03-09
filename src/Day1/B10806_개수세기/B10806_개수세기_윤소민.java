@@ -1,8 +1,8 @@
-package Day1.B10806_°³¼ö¼¼±â;
+package Day1.B10806_ê°œìˆ˜ì„¸ê¸°;
 
 import java.util.Scanner;
 
-public class B10806_°³¼ö¼¼±â_À±¼Ò¹Î {
+public class B10806_ê°œìˆ˜ì„¸ê¸°_ìœ¤ì†Œë¯¼ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
