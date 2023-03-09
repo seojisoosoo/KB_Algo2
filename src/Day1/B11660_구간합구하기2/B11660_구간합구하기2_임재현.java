@@ -12,7 +12,7 @@ public class B11660_구간합구하기2_임재현 {
         int M = Integer.parseInt(token.nextToken());
         int[][] sum = new int[N + 1][N + 1];
 
-        for (int _i = 0; _i < N; _i++) {
+        for (int _i = 0; _i <= N; _i++) {
             sum[_i][0] = 0;
             sum[0][_i] = 0;
         }
