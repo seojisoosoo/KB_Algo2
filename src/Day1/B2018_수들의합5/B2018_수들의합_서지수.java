@@ -1,7 +1,9 @@
+package Day1.B2018_수들의합5;
+
 
 import java.util.Scanner;
 
-public class Main {
+public class B2018_수들의합_서지수 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
