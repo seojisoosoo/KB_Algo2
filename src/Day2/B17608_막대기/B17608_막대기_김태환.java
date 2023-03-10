@@ -3,7 +3,7 @@ package Day2;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class D17608 {
+public class B17608_막대기_김태환 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -19,11 +19,10 @@ public class D17608 {
 			if (pop>value) {
 				answer+=1;
 				value=pop;
-//			System.out.println(pop);
 			}
 		}
 		System.out.println(answer);
-//		System.out.println(value);
+
 
 }
 }
