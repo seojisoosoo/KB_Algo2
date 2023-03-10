@@ -54,6 +54,7 @@ public class B12891_DNA비밀번호_조성환 {
 			default: arr[3]--;
 				break;
 			}
+			
 			switch(str.charAt(start+P)){
 			case 'A': arr[0]++;
 				break;
