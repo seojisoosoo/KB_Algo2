@@ -1,4 +1,8 @@
 package Day1.B11659_구간합구하기;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 import java.io.BufferedReader;
 import java.io.IOException;

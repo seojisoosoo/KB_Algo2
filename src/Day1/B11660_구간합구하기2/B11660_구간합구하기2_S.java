@@ -6,39 +6,29 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class B11660_구간합구하기2_전상희 {
+public class B11660_구간합구하기2_S {
 
 	public static void main(String[] args) throws IOException {
+		
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer token = new StringTokenizer(bf.readLine(), " ");
+		StringTokenizer token = new StringTokenizer(bf.readLine() , " ");
 		
 		int N = Integer.parseInt(token.nextToken());
 		int M = Integer.parseInt(token.nextToken());
-
-		int[][] arr = new int[N][N];
-		int[][] sArr = new int[N+1][N+1];
 		
-		for(int i=0; i<N; i++) {
+		int [][] arr = new int[N+1][N+1];
+		
+		for(int i=1; i<N+1; i++) {
 			token = new StringTokenizer(bf.readLine(), " ");
-			for(int j=0; j<N; j++) {
-				arr[i][j] = Integer.parseInt(token.nextToken());			
-			}			
+			for(int j=1; j<N+1; j++) arr[i][j] = Integer.parseInt(token.nextToken());
 		}
 		
-		for(int i=0; i<N; i++) {
-			sArr[i+1][1] = sArr[i][1] + arr[i][0];
-			sArr[1][i+1] = sArr[1][i] + arr[0][i];
+		int [][] dp = new int [N+1][N+1];
+		
+		for(int x=1; x<N+1; x++) {
+			for(int y=1; y <N+1; y++)
+				dp[x][y] = dp[x][y-1] + dp[x-1][y] - dp[x-1][y-1] + arr[x][y];
 		}
-		
-		for(int i=2; i<N+1; i++) {
-			for(int j=2; j<N+1; j++) {
-				sArr[i][j] = sArr[i-1][j] + sArr[i][j-1] - sArr[i-1][j-1] + arr[i-1][j-1];
-			}			
-		}
-		
-		System.out.println(Arrays.deepToString(sArr));
-		
-		int[] ans = new int[M];
 		
 		for(int i=0; i<M; i++) {
 			token = new StringTokenizer(bf.readLine(), " ");
@@ -46,11 +36,11 @@ public class B11660_구간합구하기2_전상희 {
 			int y1 = Integer.parseInt(token.nextToken());
 			int x2 = Integer.parseInt(token.nextToken());
 			int y2 = Integer.parseInt(token.nextToken());
-			ans[i] = sArr[x2][y2] -sArr[x1-1][y2] - sArr[x2][y1-1] + sArr[x1-1][y1-1];	
+			
+			int tot = dp[x2][y2] - dp[x2][y1-1] 
+						- dp[x1-1][y2] + dp[x1-1][y1-1];
+			
+			System.out.println(tot);
 		}
-		
-		for(int a : ans) {
-			System.out.println(a);
-		}	
 	}
 }
