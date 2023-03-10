@@ -6,10 +6,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 public class B11659_구간합구하기_김원우 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -1,7 +1,8 @@
+package Day1.B2018_수들의합;
 
 import java.util.Scanner;
 
-public class Main {
+public class B2018_수들의합_서지수 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -11,10 +12,12 @@ public class Main {
 		int count=0;
 		
 		int arr[]=new int[N+1];
+		int ans[]=new int[N+1];
 		
 		for(int i=1;i<=N;i++) {
 			arr[i]=i;
 		}
+		
 		
 		for(int start=1;start<=N;start++) {
 			int sum=0;
