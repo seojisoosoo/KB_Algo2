@@ -1,4 +1,4 @@
-package Day1.B11660_구간합치기2;
+package Day1.B11660_구간합구하기2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
