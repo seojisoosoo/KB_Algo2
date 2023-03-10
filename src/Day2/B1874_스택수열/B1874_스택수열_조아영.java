@@ -38,7 +38,7 @@ public class B1874_스택수열_조아영 {
 				builder.append("-\n");
 
 			}else if(now < stack.peek()) {
-				System.out.println("FAIL");
+				System.out.println("NO");
 				return;
 			}
 		}
