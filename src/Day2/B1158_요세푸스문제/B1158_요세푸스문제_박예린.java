@@ -15,7 +15,6 @@ public class B1158_요세푸스문제_박예린 {
 		
 		// 초기값
 		int front = 0;
-		int rear = N-1;
 		int idx = K-1;
 		
 		// ArrayList 초기화
@@ -51,7 +50,6 @@ public class B1158_요세푸스문제_박예린 {
 			
 			front = idx;
 			idx = (idx+2)%size;
-			rear = (front+size-1)%size;	
 		}
 	}
 }
