@@ -18,7 +18,6 @@ public class B2018_수들의합5_이지은 {
 		
 		int N = Integer.parseInt(br.readLine());
 		int cnt = 0; //자연수의 합으로 나타내는 가지수 
-		
 		int start = 1; //자연수 1부터 시작
 		
 		while(start<=N) {
