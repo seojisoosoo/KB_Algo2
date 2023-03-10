@@ -25,10 +25,13 @@ public class B2164_카드2_박예린 {
 		
 		while(que.size() > 1) {
 			que.remove();
-			top = que.remove();
+			top = que.peek();
 			que.add(top);
+			
+			if(que.size()>1) que.remove();
 			System.out.println(que);
+
 		}
-		System.out.println(top);
+		System.out.println(que.peek());
 	}
 }
