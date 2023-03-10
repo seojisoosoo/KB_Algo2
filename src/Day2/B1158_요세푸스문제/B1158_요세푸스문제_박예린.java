@@ -51,14 +51,7 @@ public class B1158_요세푸스문제_박예린 {
 			
 			front = idx;
 			idx = (idx+2)%size;
-			rear = (front+size-1)%size;
-			
-			System.out.println("arrList" + arrList);
-			System.out.println("size" + size);
-			System.out.println("front" + front);
-			System.out.println("idx" + idx);
-			System.out.println("rear" + rear);
-			System.out.println("-------------------");			
+			rear = (front+size-1)%size;	
 		}
 	}
 }
