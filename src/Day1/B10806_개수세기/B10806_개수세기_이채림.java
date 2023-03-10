@@ -15,7 +15,6 @@ import java.util.StringTokenizer;
  * 
  * */
 
-
 //아까 못풀어서 강사님 강의 들으면서 따라 쓴 코드입니다.
 public class B10806_개수세기_이채림{
 
