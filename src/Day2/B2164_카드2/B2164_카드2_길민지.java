@@ -21,11 +21,9 @@ public class B2164_카드2_길민지 {
 			que.add(i);
 		}
 		
-		int i = 0;
 		while(que.size()>1) {
-			if (i%2==0) que.poll();
-			else que.add(que.poll());
-			i++;
+			que.poll();
+			que.add(que.poll());
 		}
 		// 결과 출력
 		System.out.println(que.peek());
