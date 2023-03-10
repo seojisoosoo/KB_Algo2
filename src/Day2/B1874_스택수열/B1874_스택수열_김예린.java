@@ -15,6 +15,7 @@ public class B1874_스택수열_김예린 {
         StringBuilder check = new StringBuilder();  // for문을 사용하지 않아도 출력하기 편리함
         int start = 0;
 
+
         // N이 0이 될 때 까지 == N번 반복
         while (N --> 0)  {
             st = new StringTokenizer(bf.readLine());
