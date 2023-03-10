@@ -1,10 +1,10 @@
-package Day2;
+package Day2.B2164_카드2;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Prac {
+public class B2164_카드2_김태환 {
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
