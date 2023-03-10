@@ -34,8 +34,6 @@ public class B17608_막대기_서지수 {
 		}	
 		
 		System.out.println(new_stack.size());
-		
-		
 
 	}
 
