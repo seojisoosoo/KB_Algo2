@@ -1,4 +1,4 @@
-package boj;
+package Day1.B12891_DNA비밀번호;
 
 import java.io.BufferedReader;
 import java.io.IOException;

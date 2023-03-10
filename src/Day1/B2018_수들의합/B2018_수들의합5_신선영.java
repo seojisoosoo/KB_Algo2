@@ -1,4 +1,4 @@
-package day1;
+package Day1.B2018_수들의합;
 
 import java.io.BufferedReader;
 import java.io.IOException;
