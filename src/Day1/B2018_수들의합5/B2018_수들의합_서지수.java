@@ -11,10 +11,12 @@ public class Main {
 		int count=0;
 		
 		int arr[]=new int[N+1];
+		int ans[]=new int[N+1];
 		
 		for(int i=1;i<=N;i++) {
 			arr[i]=i;
 		}
+		
 		
 		for(int start=1;start<=N;start++) {
 			int sum=0;
