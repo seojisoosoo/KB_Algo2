@@ -20,3 +20,7 @@ public class B2018_수들의합_김준서 {
         System.out.println(dp[N]);
     }
 }
+
+/* i
+ *  
+ * */
