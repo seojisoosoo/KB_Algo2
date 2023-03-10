@@ -3,7 +3,6 @@ package Day1.B2018_수들의합;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class B2018_수들의합_조성환 {
 
@@ -25,7 +24,5 @@ public class B2018_수들의합_조성환 {
 			}
 		}
 		System.out.println(ans);
-		
 	}
-
 }
