@@ -20,10 +20,8 @@ public class B2164_카드2_박창현 {
             q.add(i);
         }
         while (!q.isEmpty()){
-            if(count%2==1){
-                card=q.poll();
-            }else {
-                card=q.poll();
+            card=q.poll();
+            if(count%2==0){
                 q.add(card);
             }
             count++;
