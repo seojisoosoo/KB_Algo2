@@ -1,4 +1,4 @@
-package day02;
+package Day2.B17608_막대기;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class B17608_막대기 {
+public class B17608_막대기_서지수 {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
