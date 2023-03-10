@@ -1,4 +1,4 @@
-package Day2;
+package Day2.B17608_막대기;
 
 import java.util.Scanner;
 import java.util.Stack;
