@@ -15,15 +15,16 @@ public class B2750_선택정렬_조성환 {
 			arr[i] = Integer.parseInt(bf.readLine());
 		}
 		
-		for(int i = 0; i<N; i++) {
-			for(int j = i + 1; j < N; j++) { 
-				if(arr[i] > arr[j]) { 
-					int temp = arr[i]; 
-					arr[i] = arr[j]; 
-					arr[j] = temp;  
-				}
-			}
-		}
+		for (int i = 0; i < N; i++) {
+            int min = i;
+            for (int j = i; j < N; j++) {
+                if (arr[min]>arr[j]) min = j;
+            }
+            int temp = arr[i]; 
+            arr[i] = arr[min]; 
+            arr[min] = temp;  
+        }
+		
 
 		for(int i =  0 ; i < N ; i++) {
 			System.out.println(arr[i]);
