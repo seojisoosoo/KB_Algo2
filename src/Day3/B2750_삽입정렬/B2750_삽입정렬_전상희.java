@@ -17,8 +17,8 @@ public class B2750_삽입정렬_전상희 {
 			int now = arr[i];
 			for(int j=i-1; j>=0; j--) {
 				if(arr[j]>now) swap(arr, j, j+1);
+				else break;
 			}
-			System.out.println(i + "회전 후 arr : " + Arrays.toString(arr));
 		} 
 	}
 	
