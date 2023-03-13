@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class B2750_삽입정렬_조아영 {
 
-	public static void bubblesort(int[] arr, int N) {
+	public static void Insertionsort(int[] arr, int N) {
 
 		int min = 0;
 		int j = 0;
@@ -36,7 +36,7 @@ public class B2750_삽입정렬_조아영 {
 		}
 
 		// 정렬
-		bubblesort(arr, N);
+		Insertionsort(arr, N);
 	}
 
 }

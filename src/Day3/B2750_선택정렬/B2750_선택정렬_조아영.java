@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class B2750_선택정렬_조아영 {
 
-	public static void bubblesort(int[] arr, int N) {
+	public static void selectionsort(int[] arr, int N) {
 
 		for (int i = 0; i < N - 1; i++) { // i=0
 			int min = i;
@@ -41,7 +41,7 @@ public class B2750_선택정렬_조아영 {
 		}
 
 		// 정렬
-		bubblesort(arr, N);
+		selectionsort(arr, N);
 
 	}
 
