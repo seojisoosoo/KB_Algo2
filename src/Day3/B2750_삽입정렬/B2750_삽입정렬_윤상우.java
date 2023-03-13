@@ -27,11 +27,14 @@ public class B2750_삽입정렬_윤상우 {
 	public static void insertSort2(int [] arr) {
 		int len = arr.length;
 		for(int i=1; i<len; i++) {
-			for(int j=i; j>0; j--) {
-				if(arr[j-1]>arr[j]) {
-					swap(arr, j, j-1);
-				}else break;
+			int target = arr[i];
+			int j = i-1;
+			while(j>=0 && target < arr[j]) {
+				arr[j+1] = arr[j];
+				j--;
 			}
+			
+			arr[j+1] = target;
 		}
 	}
 	
