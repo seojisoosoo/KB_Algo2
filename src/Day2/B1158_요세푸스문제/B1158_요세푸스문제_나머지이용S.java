@@ -21,6 +21,7 @@ public class B1158_요세푸스문제_나머지이용S {
 		
 		int idx = 0;
 		while(arr.size()!=0) {
+			System.out.println(idx);
 			idx = (idx+K-1)%arr.size();
 			if(arr.size()==1) str.append(arr.remove(idx) + ">");
 			else str.append(arr.remove(idx) +", ");
