@@ -1,4 +1,4 @@
-package Day1.B2493_탑;
+package Day2.B2493_탑;
 
 import java.io.BufferedReader;
 import java.io.IOException;
