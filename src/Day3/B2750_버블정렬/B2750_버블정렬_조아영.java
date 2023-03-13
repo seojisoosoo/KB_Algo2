@@ -5,14 +5,6 @@ import java.util.Scanner;
 //수 정렬하기
 public class B2750_버블정렬_조아영 {
 
-	public static void swap(int[] arr, int i, int j) {
-
-		int temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
-
-	}
-
 	public static void bubblesort(int[] arr) {
 
 		for (int i = arr.length - 1; i > 0; i--) { // i=4

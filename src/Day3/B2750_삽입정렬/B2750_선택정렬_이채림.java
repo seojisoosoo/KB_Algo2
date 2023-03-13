@@ -1,4 +1,4 @@
-package Day3.B2750_선택정렬;
+package Day3.B2750_삽입정렬;
 
 import java.util.Scanner;
 
