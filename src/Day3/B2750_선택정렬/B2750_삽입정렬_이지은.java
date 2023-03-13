@@ -1,4 +1,4 @@
-package Day3.B2750_버블정렬;
+package Day3.B2750_선택정렬;
 
 /**
  * 작성자:이지은
@@ -11,19 +11,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class B2750_버블정렬_이지은 {
+public class B2750_삽입정렬_이지은 {
 	public static void swap(int[] arr, int i, int j) {
-		//int [] new_arr = arr.clone();  //기존 배열에 영향을 주지 않기 위해 clone()을 사용
 		int temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = temp;
 	}
 	
-	public static void bubbleSort(int[] arr) {
+	public static void insertSort(int[] arr) {
 		for(int i=0; i<arr.length-1; i++) {
-			for(int j=1; j<arr.length-i; j++) {
-				if(arr[j-1]>arr[j]) {
-					swap(arr, j-1, j);
+			int min = arr[i];
+			for(int j=i+1; j<arr.length; j++) {
+				if(min>arr[j]) {
+					min = arr[j];
+					swap(arr, j, i);
 				}
 			}
 		}
@@ -41,7 +42,7 @@ public class B2750_버블정렬_이지은 {
 			arr[i] = Integer.parseInt(br.readLine());
 		}
 	
-		//버블 정렬 
-		bubbleSort(arr);
+		//삽 정렬 
+		insertSort(arr);
 	}	
 }
