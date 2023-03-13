@@ -14,7 +14,7 @@ public class B2750_버블정렬_박예린 {
 	
 	public static void bubbleSort(int [] arr) {
 		int len = arr.length;
-
+		
 		for(int i = 0; i < len; i++) {
 			for(int j = 0; j < len-i-1; j++) {
 				if(arr[j] > arr[j+1]) {
@@ -29,7 +29,7 @@ public class B2750_버블정렬_박예린 {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		
 		int N = Integer.parseInt(bf.readLine());
-		int [] arr = new int[5];
+		int [] arr = new int[N];
 
 		for(int i = 0; i < N; i++) {
 			arr[i] = Integer.parseInt(bf.readLine());
