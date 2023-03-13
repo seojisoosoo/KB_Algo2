@@ -1,3 +1,5 @@
+package Day2.B1158_요세푸스문제;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
