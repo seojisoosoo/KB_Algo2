@@ -1,4 +1,4 @@
-package Day2.B1158_요세푸스;
+package Day2.B1158_요세푸스문제;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class B1158_요세푸스_윤상우 {
+public class B1158_요세푸스문제_윤상우 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
