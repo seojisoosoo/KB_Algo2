@@ -18,15 +18,15 @@ public class B2750_선택정렬_이지은 {
 		arr[j] = temp;
 	}
 	
-	public static void insertSort(int[] arr) {
+	public static void selectioncSort(int[] arr) {
 		for(int i=0; i<arr.length-1; i++) {
-			int min = arr[i];
+			int min = i;
 			for(int j=i+1; j<arr.length; j++) {
-				if(min>arr[j]) {
-					min = arr[j];
-					swap(arr, j, i);
+				if(arr[min]>arr[j]) {
+					min = j;
 				}
 			}
+			swap(arr, i, min);
 		}
 		for(int a: arr) {
 			System.out.println(a);	
@@ -42,7 +42,7 @@ public class B2750_선택정렬_이지은 {
 			arr[i] = Integer.parseInt(br.readLine());
 		}
 	
-		//삽 정렬 
-		insertSort(arr);
+		//선택 정렬 
+		selectioncSort(arr);
 	}	
 }
