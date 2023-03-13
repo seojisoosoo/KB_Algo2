@@ -22,18 +22,18 @@ public class B2750_병합정렬_길민지 {
 		// Conquer
 		int leftIdx = left;
 		int rightIdx = center+1;
-		int currIdx = 0;
+		int currIdx = left;
 		int tmp[] = new int[right-left+1];
 		
 		for (int i=0; i<right-left+1;i++) {
 			tmp[i] = arr[left+i];
 		}
 		
-		while(currIdx<right-left+1) {
-			if (leftIdx>center) arr[(currIdx++)+left] = tmp[(rightIdx++)-left]; 
-			else if (rightIdx>right) arr[(currIdx++)+left] = tmp[(leftIdx++) - left]; 
-			else if (tmp[leftIdx-left]<tmp[rightIdx-left]) arr[(currIdx++)+left] = tmp[(leftIdx++)-left]; 
-			else arr[(currIdx++)+left] = tmp[(rightIdx++)-left]; 
+		while(currIdx<right+1) {
+			if (leftIdx>center) arr[currIdx++] = tmp[(rightIdx++)-left]; 
+			else if (rightIdx>right) arr[currIdx++] = tmp[(leftIdx++) - left]; 
+			else if (tmp[leftIdx-left]<tmp[rightIdx-left]) arr[currIdx++] = tmp[(leftIdx++)-left]; 
+			else arr[currIdx++] = tmp[(rightIdx++)-left]; 
 		}
 	}
 
