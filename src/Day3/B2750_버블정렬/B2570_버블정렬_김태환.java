@@ -1,9 +1,9 @@
-package Day3;
+package Day3.B2750_버블정렬;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class B2570_버블정렬2 {
+public class B2570_버블정렬_김태환 {
 	
 	public static void bubbleSort(int [] arr) {
 		
