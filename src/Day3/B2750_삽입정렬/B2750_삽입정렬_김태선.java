@@ -6,14 +6,6 @@ import java.io.InputStreamReader;
 
 public class B2750_삽입정렬_김태선 {
 
-	public static void swap(int [] arr, int i, int j) {
-		
-		int temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
-		
-	}		
-	
 	public static void insertionSort(int [] arr, int N) {
 		
 		for(int i = 0; i < N; i++) {

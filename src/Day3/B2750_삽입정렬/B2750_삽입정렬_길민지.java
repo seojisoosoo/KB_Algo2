@@ -9,20 +9,11 @@ public class B2750_삽입정렬_길민지 {
 		for (int i=1; i<N; i++) {
 			int now = arr[i];
 			int leftIdx = i-1;
-			while (true) {
-				if (now>arr[leftIdx]) {
-					arr[leftIdx+1] = now;
-					break;
-				}
-				else {
-					arr[leftIdx+1] = arr[leftIdx];
-					if (leftIdx==0) {
-						arr[leftIdx]=now;
-						break;
-					}
-					leftIdx-=1;
-				}
+			while (leftIdx>=0 && arr[leftIdx]>now) {
+				arr[leftIdx+1] = arr[leftIdx];
+				leftIdx--;
 			}
+			arr[leftIdx + 1]=now;
 		}
 	}
 
