@@ -34,12 +34,7 @@ public class B1874_스택수열_서지수 {
 				isNo=true;
 				break;
 			}
-			if(idx>n+1) {
-				break;
-			}
-			
 		
-			
 			if(stack.isEmpty()) {
 				++value;
 				stack.push(value);
