@@ -30,10 +30,14 @@ public class B2750_병합정렬_길민지 {
 		}
 		
 		while(currIdx<right+1) {
-			if (leftIdx>center) arr[currIdx++] = tmp[(rightIdx++)-left]; 
-			else if (rightIdx>right) arr[currIdx++] = tmp[(leftIdx++) - left]; 
-			else if (tmp[leftIdx-left]<tmp[rightIdx-left]) arr[currIdx++] = tmp[(leftIdx++)-left]; 
-			else arr[currIdx++] = tmp[(rightIdx++)-left]; 
+			if (leftIdx>center) 
+				arr[currIdx++] = tmp[(rightIdx++)-left]; 
+			else if (rightIdx>right) 
+				arr[currIdx++] = tmp[(leftIdx++) - left]; 
+			else if (tmp[leftIdx-left]<tmp[rightIdx-left]) 
+				arr[currIdx++] = tmp[(leftIdx++)-left]; 
+			else
+				arr[currIdx++] = tmp[(rightIdx++)-left]; 
 		}
 	}
 
