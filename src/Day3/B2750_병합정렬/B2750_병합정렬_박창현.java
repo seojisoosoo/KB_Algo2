@@ -5,55 +5,28 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-// B2750_버블정렬
 public class B2750_병합정렬_박창현 {
-    public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-    }
-
     public static void mergeSort(int[] arr) {
         mergeSort(arr, 0, arr.length - 1);
     }
 
-    public static void mergeSort(int[] arr, int left, int right) {
-        if (left >= right) {
-            return;
-        }
-        int center = (left + right) / 2;
+    public static void mergeSort(int[] arr, int s, int e) {
+        if (s >= e) return;
+        int m = (s + e) / 2;
+        mergeSort(arr, s, m);
+        mergeSort(arr, m + 1, e);
 
-        mergeSort(arr, left, center);
-        mergeSort(arr, center + 1, right);
-
-        int[] res = new int[right - left + 1];
-        int idx = 0;
-        int lidx = left, ridx = center + 1;
-        while (lidx <= center && ridx <= right) {
-            if (arr[lidx] <= arr[ridx]) {
-                res[idx++] = arr[lidx++];
-            } else {
-                res[idx++] = arr[ridx++];
-            }
+        int[] tmp = new int[e - s + 1];
+        int l = s, r = m + 1, idx = 0;
+        while (l <= m && r <= e) {
+            if (arr[l] <= arr[r]) tmp[idx++] = arr[l++];
+            else tmp[idx++] = arr[r++];
         }
-        while (lidx <= center) {
-            res[idx++] = arr[lidx++];
+        while (l <= m) tmp[idx++] = arr[l++];
+        while (r <= e) tmp[idx++] = arr[r++];
+        for (int i = 0; i < e - s + 1; i++) {
+            arr[i + s] = tmp[i];
         }
-        while (ridx <= right) {
-            res[idx++] = arr[ridx++];
-        }
-        System.arraycopy(res, 0, arr, left, res.length);
-//        if (arr[center]<arr[left])swap(arr,center,left);
-//        if (arr[center]>arr[right])swap(arr,center,right);
-//
-//        while (resIdx<mid){
-//            if (rightIdx.issafe ?&&rightIdx.val > leftIdx.val){
-//            arr[resIdx++] = rightIdx.val;
-//            rightIdx++;
-//        } else if (leftIdx.issafe ?&&rightIdx.val <= leftIdx.val){
-//            arr[resIdx++] = leftIdx.val;
-//            leftIdx++;
-//        }
     }
 
     public static void main(String[] args) throws IOException {
@@ -63,12 +36,7 @@ public class B2750_병합정렬_박창현 {
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(br.readLine());
         }
-        //insertionSort(arr);
-        //quickSort(arr);
         mergeSort(arr);
         System.out.println(Arrays.toString(arr));
-        for (int i : arr) {
-            System.out.println(i);
-        }
     }
 }
