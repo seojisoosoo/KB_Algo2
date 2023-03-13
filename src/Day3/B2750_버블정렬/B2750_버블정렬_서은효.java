@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class B2750_버블정렬_서은효 {
 
 	public static void swap(int [] arr, int i, int j ) {
 	
@@ -49,3 +49,4 @@ public class Main {
 	}
 
 }
+

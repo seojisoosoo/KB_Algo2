@@ -5,14 +5,6 @@ import java.util.Scanner;
 
 public class B2750_버블정렬_이채림 {
 
-	public static void swap(int[] arr, int i, int j) {
-		int temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
-
-		// int [] new_arr = arr.clone();// 복제 배열에 새로운 값 저장!
-	}
-
 	public static void bubbleSort(int[] arr, int n) {
 		int cnt = 0;
 
