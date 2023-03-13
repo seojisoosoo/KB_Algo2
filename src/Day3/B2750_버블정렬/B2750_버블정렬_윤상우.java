@@ -1,4 +1,4 @@
-package Day3;
+package Day3.B2750_버블정렬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class B2750_버블정렬 {
+public class B2750_버블정렬_윤상우 {
 	
 	public static void swap(int [] arr, int i, int j) {
 		int temp = arr[i];
