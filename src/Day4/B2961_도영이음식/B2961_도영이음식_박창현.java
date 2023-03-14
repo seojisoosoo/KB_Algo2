@@ -1,4 +1,4 @@
-package Day4.B2961_도영이가_만든_맛있는_음식;
+package Day4.B2961_도영이음식;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class B2961_도영이가_만든_맛있는_음식_박창현 {
+public class B2961_도영이음식_박창현 {
     static int[][] arr;
     static int N;
     static int count=0;

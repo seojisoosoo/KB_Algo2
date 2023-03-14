@@ -1,11 +1,11 @@
-package Day4.B2961_도영이가_만든_맛있는_음식;
+package Day4.B2961_도영이음식;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class B2961_도영이가만든맛있는음식_김원우 {
+public class B2961_도영이음식_김원우 {
 
     static int[] arr_bitter;
     static int[] arr_sour;
