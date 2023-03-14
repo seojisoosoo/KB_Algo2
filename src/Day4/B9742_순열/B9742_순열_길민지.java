@@ -1,7 +1,8 @@
 package Day4.B9742_순열;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class B9742_순열_길민지 {
@@ -17,11 +18,9 @@ public class B9742_순열_길민지 {
 		if (r==charArr.length) { // 재귀 종료 조건
 			num++;
 			if (num==N) { // N 번째 순열인 경우 출력 후 return;
-				System.out.print(str + " " + N + " = ");
 				for(int i=0; i<charArr.length;i++) System.out.print(resultArr[i]);
 				System.out.println();
 				isChecked = true;
-				return;
 			}
 			return;
 		}
@@ -36,12 +35,14 @@ public class B9742_순열_길민지 {
 	}
 
 	public static void main(String[] args) throws IOException {
-		Scanner sc = new Scanner(System.in);
-
-		while (sc.hasNextLine()) { // EOF 처리
-			StringTokenizer st = new StringTokenizer(sc.nextLine());
+		// Buffer 사용
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer("");
+		String input = "";
+			
+		while ((input = bf.readLine())!= null && input.length() != 0) {
+			st = new StringTokenizer(input);
 			str = st.nextToken();
-
 			// 변수 초기화
 			N = Integer.parseInt(st.nextToken());
 			charArr = new char[str.length()];
@@ -51,15 +52,48 @@ public class B9742_순열_길민지 {
 			num = 0;
 			isChecked = false;
 				
+			// 출력
+			System.out.print(str + " " + N + " = ");
+			
+			// 순열 찾기
+			permutation(0);
+				
+			// 못 찾은 경우 출력
+			if (!isChecked) {
+				System.out.println("No permutation");
+			}
+				
+		}
+		
+		// 스캐너 사용
+		/* 
+		Scanner sc = new Scanner(System.in);
+		
+			
+		while (sc.hasNextLine()) {
+			StringTokenizer st = new StringTokenizer(sc.nextLine());
+			str = st.nextToken();
+			// 변수 초기화
+			N = Integer.parseInt(st.nextToken());
+			charArr = new char[str.length()];
+			charArr = str.toCharArray();
+			resultArr = new char[str.length()];
+			isSelected = new boolean[str.length()];
+			num = 0;
+			isChecked = false;
+				
+			// 출력
+			System.out.print(str + " " + N + " = ");
+			
 			// 순열
 			permutation(0);
-			
-			// 찾아야되는 순열을 찾지 못한 경우
+				
 			if (!isChecked) {
-				System.out.print(str + " " + N + " = No permutation");
-				System.out.println();
+				System.out.print("No permutation");
 			}
+				
 		}
 		sc.close();
+		*/
 	}
 }
