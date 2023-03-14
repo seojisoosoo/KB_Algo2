@@ -1,3 +1,5 @@
+package Day2.B2493_탑;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

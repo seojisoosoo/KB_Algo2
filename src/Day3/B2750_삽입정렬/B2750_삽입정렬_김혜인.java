@@ -1,10 +1,10 @@
-package Day3.B2750_»ğÀÔÁ¤·Ä;
+package Day3.B2750_ì‚½ì…ì •ë ¬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class B2750_»ğÀÔÁ¤·Ä_±èÇıÀÎ {
+public class B2750_ì‚½ì…ì •ë ¬_ê¹€í˜œì¸ {
 
 	public static void swap(int[] arr, int i, int j) {
 		int temp = arr[i];
@@ -28,7 +28,7 @@ public class B2750_»ğÀÔÁ¤·Ä_±èÇıÀÎ {
 	
 	
 	public static void main(String[] args) throws IOException {
-		/* ÀÔ·Â Ã³¸® */
+		/* ï¿½Ô·ï¿½ Ã³ï¿½ï¿½ */
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		
 		int N = Integer.parseInt(bf.readLine());
@@ -39,7 +39,7 @@ public class B2750_»ğÀÔÁ¤·Ä_±èÇıÀÎ {
 			arr[i] = Integer.parseInt(bf.readLine());
 		}
 		
-		// Á¤·Ä
+		// ï¿½ï¿½ï¿½ï¿½
 		InsertionSort(arr);
 		
 		for(int i : arr) {

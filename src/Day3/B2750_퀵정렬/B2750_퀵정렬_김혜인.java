@@ -1,11 +1,11 @@
-package Day3.B2750_ÄüÁ¤·Ä;
+package Day3.B2750_í€µì •ë ¬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class B2750_ÄüÁ¤·Ä_±èÇıÀÎ {
+public class B2750_í€µì •ë ¬_ê¹€í˜œì¸ {
 
 		public static void swap(int[] arr, int i, int j) {
 			int temp = arr[i];
@@ -20,7 +20,7 @@ public class B2750_ÄüÁ¤·Ä_±èÇıÀÎ {
 			int l = left+1;
 			int r = right;
 			
-			while(l <=r) { //left-right ¾ù°¥¸®Áö ¾ÊÀº µ¿¾È ÀüÁø
+			while(l <=r) { //left-right ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				while ( l<=r && arr[l]<=arr[pivot]) {
 					l++;
 				}
@@ -28,19 +28,19 @@ public class B2750_ÄüÁ¤·Ä_±èÇıÀÎ {
 					r--;
 				}
 				
-				//ÀÌ ºÎºĞ ´Ù½Ã º¸±â
+				//ï¿½ï¿½ ï¿½Îºï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				if(l>r) 
-					swap(arr, r, pivot); //¾ù°¥¸°°æ¿ì, right°¡ left¾Õ¼± °æ¿ì
+					swap(arr, r, pivot); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, rightï¿½ï¿½ leftï¿½Õ¼ï¿½ ï¿½ï¿½ï¿½
 				else 
-					swap(arr, l, r); //left, right Ã£Àº °æ¿ì
+					swap(arr, l, r); //left, right Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½
 			}
 			
 			return r;
 	}
 		
-		//Àç±Í ºÎºĞ(ÀÚ±â ÇÔ¼ö¸¦ ÇÑ¹ø ´õ ¾ğ±Ş). ÀÌºÎºĞ ´Ù½Ã º¸±â
+		//ï¿½ï¿½ï¿½ ï¿½Îºï¿½(ï¿½Ú±ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½Ñ¹ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½). ï¿½ÌºÎºï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		public static void quickSort(int []arr, int left, int right) {
-			//Àç±Í¿¡´Â Á¾·áÁ¶°Ç ÇÊ¼ö
+			//ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¼ï¿½
 			if(left >=right ) return;
 			
 			int pivot = partition(arr, left, right);
@@ -52,7 +52,7 @@ public class B2750_ÄüÁ¤·Ä_±èÇıÀÎ {
 		
 		
 		public static void main(String[] args) throws IOException {
-			/* ÀÔ·Â Ã³¸® */
+			/* ï¿½Ô·ï¿½ Ã³ï¿½ï¿½ */
 			
 		
 			int [] arr = {5,2,7,1,9,6,8};
