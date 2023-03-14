@@ -1,4 +1,4 @@
-package Day4.B2961_도영이가 만든 맛있는 음식;
+package Day4.B2961_도영이가_만든_맛있는_음식;
 
 import java.io.BufferedReader;
 import java.io.IOException;
