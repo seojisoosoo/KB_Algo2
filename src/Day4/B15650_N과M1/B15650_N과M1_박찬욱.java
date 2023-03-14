@@ -20,7 +20,7 @@ public class B15650_N과M1_박찬욱 {
 			return;
 		}
 		
-		for(int i = start; i < arr.length; i++) {
+		for(int i = start; i < arr.length; i++) { 
 			if(isSelected[i]) continue;
 			isSelected[i] = true;
 			select[r] = i;
