@@ -10,7 +10,7 @@ import java.util.Queue;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class B2493_탑_S {
+public class B2493_탑_Sol {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
