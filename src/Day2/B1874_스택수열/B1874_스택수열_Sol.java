@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class B1874_스택수열_S {
+public class B1874_스택수열_Sol {
 	public static void main(String[] args) {
 
 
