@@ -3,7 +3,6 @@ package Day4.B2961_도영이가만든맛있는음식;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class B2961_도영이가만든맛있는음식_박예린 {
@@ -18,30 +17,21 @@ public class B2961_도영이가만든맛있는음식_박예린 {
 	static StringBuilder stringBuilder = new StringBuilder();
 
 	static void subset(int [] arr1, int [] arr2, int num) {
+		int S = 1;
+		int B = 0;
+		
 		// 종료 조건
 		if(num == N) {
 			cnt++;
-			S = 1;
-			B = 0;
-			
-			System.out.println(Arrays.toString(arr1));
-			System.out.println(Arrays.toString(arr2));
 
 			for(int i = 0; i < N; i++) {
 				if(isSelected[i]) {
-					System.out.print(arr1[i] + " ");
-					System.out.print(arr2[i] + " ");
-
 					S *= arr1[i];
 					B += arr2[i];
 				}				
 			}
-			System.out.println(res);
-			System.out.println(S);
-			System.out.println(B);
-			if(Math.abs(S-B) < res) res = Math.abs(S-B);
-			
-			System.out.println();
+
+			if(Math.abs(S-B) < res && B > 0) res = Math.abs(S-B);
 			return;
 		}
 		
@@ -63,7 +53,7 @@ public class B2961_도영이가만든맛있는음식_박예린 {
 		res = 100;
 		
 		for(int i = 0; i < N; i++) {
-			st = new StringTokenizer(bf.readLine()); // 여기에 써야 함!!!!!!!!!!
+			st = new StringTokenizer(bf.readLine());
 			arrSour[i] = Integer.parseInt(st.nextToken());
 			arrBitter[i] = Integer.parseInt(st.nextToken());
 		}
@@ -71,8 +61,6 @@ public class B2961_도영이가만든맛있는음식_박예린 {
 		isSelected = new boolean[N];
 		
 		subset(arrSour,arrBitter, 0);
-		System.out.println(res);
-		
-		System.out.print(stringBuilder.toString());	
+		System.out.print(Math.abs(res));
 	}
 }
