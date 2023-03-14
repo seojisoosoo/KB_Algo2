@@ -20,9 +20,7 @@ public class B9742_순열_윤상우 {
 			cnt++;
 			if(cnt==n) {
 				System.out.print(ans);
-				for(int i=0; i<R; i++) {
-					System.out.print(s.charAt(selection[i]));
-				}
+				for(int i=0; i<R; i++) System.out.print(s.charAt(selection[i]));
 				System.out.println();
 				return;
 			}
