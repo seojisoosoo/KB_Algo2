@@ -2,7 +2,7 @@ package Day3.B2750_삽입정렬;
 
 import java.util.Scanner;
 
-public class B2750_선택정렬_이채림 {
+public class B2750_삽입정렬_이채림 {
 	public static void swap(int[] arr, int i, int j) {
 		int temp = arr[i];
 		arr[i] = arr[j];
