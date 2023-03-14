@@ -22,7 +22,6 @@ public class B2961_도영이가만든맛있는음식_조성환 {
 		if(num == N) {
 			for(int i =0;i<N;i++) {
 				if(isSelected[i]) {
-					System.out.print(arr[i]);
 					a *= B[i];
 					b += S[i];
 				}
@@ -31,7 +30,6 @@ public class B2961_도영이가만든맛있는음식_조성환 {
 			if (a != 0 && b != 0 && (Math.abs(a - b)) < min) {	
 				min = Math.abs(a - b);
 			}
-			System.out.println();
 			return;
 		}
 		
