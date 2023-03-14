@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class B10986_나머지합_S {
+public class B10986_나머지합_Sol {
 
 	public static void main(String[] args) throws IOException {
 		
