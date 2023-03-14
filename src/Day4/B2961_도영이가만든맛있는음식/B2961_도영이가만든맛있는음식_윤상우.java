@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class B2961_도영이가만든맛있는음식 {
+public class B2961_도영이가만든맛있는음식_윤상우 {
 	
 	static int N;
 	static int [] a;
