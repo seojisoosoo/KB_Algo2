@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class B2961_도영이가만든맛있는음식박창현 {
+public class B2961_도영이가만든맛있는음식_박창현 {
     static int[][] arr;
     static int N;
     static int count=0;

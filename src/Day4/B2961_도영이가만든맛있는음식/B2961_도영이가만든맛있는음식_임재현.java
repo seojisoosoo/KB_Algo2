@@ -1,10 +1,10 @@
-package Day4.B2961_도영이음식;
+package Day4.B2961_도영이가만든맛있는음식;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class B2961_도영이음식_임재현 {
+public class B2961_도영이가만든맛있는음식_임재현 {
     static int N;
     static int[] S = new int[10];
     static int[] B = new int[10];
