@@ -1,4 +1,4 @@
-package day4;
+package Day4.B2961_도영이음식;
 
 import java.io.BufferedReader;
 import java.io.IOException;
