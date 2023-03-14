@@ -20,7 +20,7 @@ public class B15650_N과M1_이지은 {
 	
 	static void combination(int r, int start) {
 		if(r == M) {
-			for(int i=0; i<M; i++) System.out.print(arr[select[i]]);
+			for(int i=0; i<M; i++) System.out.print(arr[select[i]]+" ");
 			System.out.println();
 			return;
 		}
