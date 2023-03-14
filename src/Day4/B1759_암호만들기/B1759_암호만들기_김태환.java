@@ -1,4 +1,4 @@
-package Day4;
+package Day4.B1759_암호만들기;
 
 import java.util.ArrayList;
 import java.util.Arrays;
