@@ -5,58 +5,71 @@ package  Day4.B1759_암호만들기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class B1759_암호만들기_김혜인 {
-	// 중복 허용 X
+	 static int l, c;
+	 static char pwd[] ;
+	 static boolean isSelected [] ;
+	 
+	 
+public static void main(String[] args) throws IOException {
+	// TODO Auto-generated method stub
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+    l = Integer.parseInt(st.nextToken());
+    c = Integer.parseInt(st.nextToken()); 
+    
+    pwd = new char[c];
+    isSelected = new boolean[c];
+    
+    StringBuilder stringBuilder = new StringBuilder();
+    String str = br.readLine();
+    for(int i =0; i<c; i++) {
+    	pwd[i] = str.charAt(i*2);
+    }
+    
+    Arrays.sort(pwd);
+    
+    subset(0,0);
 	
-		static int N;
-		static int R;
-		static int arr [];				// 결과 넣을 배열
-		static int selection [];         // 현재 선택한 요소
-		static boolean [] isSelected;     // 마킹배열 - 선택했는지 체크
-		static StringBuilder sb = new StringBuilder();
+}
+
+ static void subset(int start, int count) {
+	if(count == l) {
+		int con = 0; //자음
+		int vow = 0; //모음
 		
-		public static void main(String[] args) throws IOException {
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-	        N = Integer.parseInt(st.nextToken());
-	        R = Integer.parseInt(st.nextToken());
-			
-	        arr = new int[N];
-			isSelected = new boolean[N];
-			selection = new int[R];
-			for(int i = 0; i<N; i++) 
-				arr[i] = i+1;
-			
-			combination(0,0);
-			System.out.println(sb);
+		for(int i =0; i<c; i++) {
+			//모음인지 확인
+			if(isSelected[i]) {
+				if (pwd[i]=='a' || pwd[i]=='e' || pwd[i]=='o' || pwd[i]=='u'|| pwd[i]=='i') {
+					vow++;
+			}else {
+				con++;
+			}
 		}
-	    
-		public static void combination(int index, int count) {
-			// TODO Auto-generated method stub
-			if(count == R) {
-		    	int x = 0;
-		        for(int j=0; j<N; j++) {
-		        	if(isSelected[j]) {
-		        		sb.append(selection[x++]+ " ");
-		        	}
-		        }
-		        sb.append('\n');
-		    	return;
-		    }
-		    
-	
-		    //이미 고른수 선택 X : index부터 다시 선택해야함
-		    for(int i=index; i<N; i++) {
-		        if(!isSelected[i]) {       // 중복인 경우 skip
-		        isSelected[i] = true;            // 중복 마킹
-		        selection[count] = arr[i];               
-		        combination(i+1, count+1);        // 다음 재귀로 가기전 +1Tlr 
-		        isSelected[i] = false;  
-		        // 이 수 사용하지 않음.	
-		        }
-		    }
 	}
 		
+		//모음이 최소 1개 이상 + 자음 최소 2개 이상
+		if (vow>=1 && con>=2) {
+			for(int i=0; i<c; i++) {
+				if(isSelected[i]) {
+					System.out.print(pwd[i]);
+				}
+			}
+			System.out.println();
+	}
+	}
+	
+		for(int i=start; i<c; i++) {
+			isSelected[i] = true;
+			subset(i+1, count+1);
+			isSelected[i] = false;
+		
+	}
 }
+
+}
+
