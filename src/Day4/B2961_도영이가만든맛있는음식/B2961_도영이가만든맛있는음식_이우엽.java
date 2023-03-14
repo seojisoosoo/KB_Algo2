@@ -22,15 +22,9 @@ public class B2961_도영이가만든맛있는음식_이우엽 {
 			int bitterSum = 0;
 			for(int i = 0; i < N; i++) {
 				if(isSelected[i]) {
+					isCheck = true;
 					sourPro *= arr2d[i][0];
 					bitterSum += arr2d[i][1];
-				}
-			}
-			
-			for(int i = 0; i < N; i++) {
-				if(isSelected[i]) {
-					isCheck = true;
-					break;
 				}
 			}
 			
