@@ -50,7 +50,7 @@ public class B2961_도영이가만든맛있는음식_박예린 {
 		
 		arrSour = new int[N];
 		arrBitter = new int[N];
-		res = 100;
+		res = 1_000_000_000;
 		
 		for(int i = 0; i < N; i++) {
 			st = new StringTokenizer(bf.readLine());
