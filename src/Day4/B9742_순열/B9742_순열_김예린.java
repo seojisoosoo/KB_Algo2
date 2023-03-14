@@ -1,4 +1,4 @@
-package Day4;
+package Day4.B9742_순열;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,7 +32,6 @@ public class B9742_순열_김예린 {
             permutation(word, r+1);
             isSelected[i] = false;
         }
-
     }
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
