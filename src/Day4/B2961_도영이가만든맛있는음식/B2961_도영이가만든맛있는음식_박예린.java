@@ -14,7 +14,6 @@ public class B2961_도영이가만든맛있는음식_박예린 {
 
 	static int cnt = 0;
 	static boolean [] isSelected;
-	static StringBuilder stringBuilder = new StringBuilder();
 
 	static void subset(int [] arr1, int [] arr2, int num) {
 		int S = 1;
