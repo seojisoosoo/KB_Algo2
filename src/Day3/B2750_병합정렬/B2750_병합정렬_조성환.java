@@ -9,10 +9,11 @@ public class B2750_병합정렬_조성환 {
 	public static void mergeSort(int[] arr, int end) {
 
 		int mid = end / 2;
+		
 
 		int[] left_arr = new int[mid];
 		int[] right_arr = new int[end - mid];
-
+		
 		for (int i = 0; i < mid; i++) {
 			left_arr[i] = arr[i];
 		}

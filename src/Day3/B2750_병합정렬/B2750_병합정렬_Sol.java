@@ -9,7 +9,7 @@ public class B2750_병합정렬_Sol {
 		
 //		System.out.println(start + "--" + end);
 //		for(int i=start; i < end +1 ; i++)System.out.print(arr[i] + " ");
-		System.out.println();
+//		System.out.println();
 		if(start >= end) {
 			return;
 		}
