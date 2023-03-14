@@ -2,13 +2,29 @@ package Day4;
 
 public class Permutation {
 
-
-	// 중복 허용 X
 	static char [] arr = {'A' , 'B' , 'C' , 'D'};
 	static int R;   				// 선택개수
 	static int [] selection; 		// 현재 선택한 요소
 	static boolean [] isSelected; 	// 마킹배열 - 선택했는지 체크
 	
+	
+	// 중복 허용 O
+	static void rep_permutation(int r) {
+		
+		if(r == R) {
+			for(int i=0; i<R; i++) System.out.print(arr[selection[i]]);
+			System.out.println();
+			return;
+		}
+		
+		for(int i=0; i<arr.length; i++) {
+			selection[r] = i;
+			rep_permutation(r+1);
+		}
+	}
+		
+	
+	// 중복 허용 X
 	static void permutation(int r) {
 		
 		if(r == R) {
