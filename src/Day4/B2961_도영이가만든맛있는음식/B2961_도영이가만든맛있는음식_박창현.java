@@ -17,7 +17,7 @@ public class B2961_도영이가만든맛있는음식_박창현 {
         if (num == N) {
             int S = 1, B = 0;
             for (int i = 0; i < N; i++) {
-                if (isSel[i] && arr[i].length > 1) {
+                if (isSel[i]) {
                     S *= arr[i][0];
                     B += arr[i][1];
                     min = Math.min(Math.abs(S - B), min);
