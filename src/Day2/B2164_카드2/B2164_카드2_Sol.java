@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class B2164_카드2_S {
+public class B2164_카드2_Sol {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
