@@ -3,7 +3,7 @@ package Day3.B2750_버블정렬;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class B2750_버블정렬_S {
+public class B2750_버블정렬_Sol {
 	
 	static void swap(int [] arr , int i , int j ) {
 		int temp = arr[i];
