@@ -13,8 +13,6 @@ public class B11725_트리의부모찾기_길민지 {
 	static int[] parent;
 	
 	static void findParent(int node) {
-		if (node==0) return; // 자식이 없을 경우 재귀 종료
-		
 		for (int i : tree[node]) { // 자식 노드 탐색
 			if (isVisited[i]==false) { 
 				isVisited[i] = true;
