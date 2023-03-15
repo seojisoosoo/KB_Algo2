@@ -33,9 +33,8 @@ public class B1759_암호만들기_조성환 {
 			}
 			if (cnt_a >= 1 && cnt_b >=2) {
 				arr_lst = new char[L];
-				for (int i1 = 0; i1 < L; i1++) {
-					arr_lst[i1] = arr[selection[i1]];
-					System.out.print(arr_lst[i1]);
+				for (int j = 0; j < L; j++) {
+					System.out.print(arr_lst[j]);
 				}
 			}else {
 				return;
@@ -69,6 +68,7 @@ public class B1759_암호만들기_조성환 {
 		for (int i = 0; i < C; i++) {
 			arr[i] = str.charAt((i * 2));
 		}
+		
 		selection = new int[L];
 		isVisited = new boolean[arr.length];
 		
