@@ -15,7 +15,6 @@ public class B11725_트리의부모찾기_Sol {
 	
 	static void Search(int node) {
 		
-		System.out.println("Node : " + node);
 		for(int nextNode : tree[node]) {
 			if(isVisited[nextNode]) continue;
 			isVisited[nextNode] = true;
@@ -40,10 +39,6 @@ public class B11725_트리의부모찾기_Sol {
 			int v = sc.nextInt();
 			tree[u].add(v);
 			tree[v].add(u);
-		}
-		
-		for(int i=0; i<tree.length; i++) {
-			System.out.println(i + " 노드 : " + tree[i]);
 		}
 		
 		parent = new int [N+1];
