@@ -1,4 +1,4 @@
-package day3;
+package Day3.B2750_병합정렬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
