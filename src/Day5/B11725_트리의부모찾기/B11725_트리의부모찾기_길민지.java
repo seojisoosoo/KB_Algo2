@@ -53,6 +53,9 @@ public class B11725_트리의부모찾기_길민지 {
 		// for (int i=0; i<tree.length;i++) System.out.println(i+"노드 : " + tree[i]);
 		
 		// RootNode부터 탐색
+		for(int i=0;i<tree.length;i++) {
+		System.out.println(tree[i]);
+		}
 		findParent(1);
 		
 		// 부모 노드 출력
