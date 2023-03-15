@@ -1,3 +1,4 @@
+// 배열 사용
 package Day5.B1068_트리;
 
 import java.io.BufferedReader;
@@ -57,6 +58,8 @@ public class B1068_트리_길민지 {
 	}
 
 }
+
+// ArrayList 사용
 /*
 package Day5.B1068_트리;
 
