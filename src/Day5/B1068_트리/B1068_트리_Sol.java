@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-
 public class B1068_트리_Sol {
 
 	static ArrayList <Integer> [] tree;
@@ -32,10 +31,8 @@ public class B1068_트리_Sol {
 		
 		for(int i=0; i<N; i++) {
 			int parent = Integer.parseInt(token.nextToken());
-			if(parent==-1)
-                root = i; 
-			else 
-                tree[parent].add(i);
+			if(parent==-1) root = i; 
+			else tree[parent].add(i);
 		}
 
 		K = Integer.parseInt(io.readLine());
