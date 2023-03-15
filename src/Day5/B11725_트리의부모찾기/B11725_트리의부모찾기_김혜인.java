@@ -1,9 +1,9 @@
-package Day5.B11725_Æ®¸®ÀÇºÎ¸ğÃ£±â;
+package Day5.B11725_íŠ¸ë¦¬ì˜ë¶€ëª¨ì°¾ê¸°;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class B11725_Æ®¸®ÀÇºÎ¸ğÃ£±â_±èÇıÀÎ{
+public class B11725_íŠ¸ë¦¬ì˜ë¶€ëª¨ì°¾ê¸°_ê¹€í˜œì¸{
 
 	static int N;
 	static ArrayList<Integer> tree [];
@@ -11,12 +11,12 @@ public class B11725_Æ®¸®ÀÇºÎ¸ğÃ£±â_±èÇıÀÎ{
 	static int[] parent;
 	
 	static void Parentnode(int node) {
-		if(node==0) {
+		if(node==0) {  //0ì¼ë•Œ ë¹ ì ¸ë‚˜ê°
 			return;
 		}for(int i : tree[node]) {
-		     if(!isVisited[i]) {       // Áßº¹ÀÎ °æ¿ì skip
-		    	 isVisited[i] = true;            // Áßº¹ ¸¶Å·
-			     parent[i]= node;             
+		     if(!isVisited[i]) {       // ë°©ë¬¸ì•ˆí–ˆì„ ê²½ìš° ë°©ë¬¸
+		    	 isVisited[i] = true;            
+			     parent[i]= node;     //  
 			     Parentnode(i);
 		}
 		}	
@@ -44,14 +44,14 @@ public class B11725_Æ®¸®ÀÇºÎ¸ğÃ£±â_±èÇıÀÎ{
 		
 		/*
 		for(int i=0; i<tree.length; i++) {
-			System.out.println(i + " ³ëµå : " + tree[i]);
+			System.out.println(i + " ë…¸ë“œ : " + tree[i]);
 		}
 		*/
 		
 		Parentnode(1);
 																
-		//ºÎ¸ğ ³ëµå Ãâ·Â
-		for (int i=2;i<N+1;i++) {
+		//ë¶€ëª¨ ë…¸ë“œ ì¶œë ¥
+		for (int i=2;i<N+1;i++) {   //ì²«ë²ˆì¨°ëŠ” ë¶€ëª¬ ë…¸ë“œ ì—†ìŒ.
 			System.out.println(parent[i]);
 		}
 		
