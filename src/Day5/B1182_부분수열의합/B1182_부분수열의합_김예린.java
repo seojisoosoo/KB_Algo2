@@ -32,7 +32,6 @@ public class B1182_부분수열의합_김예린 {
         subset(num+1);
         isSelected[num] = false;
         subset(num+1);
-
     }
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
