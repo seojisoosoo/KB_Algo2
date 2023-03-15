@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class B11725_트리부모찾기_김태환{
+public class B11725_트리의부모찾기_김태환{
 
 	static int N;
 	
