@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-<<<<<<< HEAD:src/Day5/B11725_트리의부모찾기/B11725_트리의부모찾기_김태환.java
-public class B11725_트리의부모찾기_김태환{
-=======
 public class B11725_트리의부모찾기_Sol {
->>>>>>> 8360f402d921266d773c80c9fb6b31a39f5cd63e:src/Day5/B11725_트리의부모찾기/B11725_트리의부모찾기_Sol.java
 
 	static int N;
 	static ArrayList<Integer> tree [];
