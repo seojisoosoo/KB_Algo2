@@ -7,14 +7,11 @@ import java.util.Scanner;
 public class B11725_트리의부모찾기_Sol {
 
 	static int N;
-	
 	static ArrayList<Integer> tree [];
-	
 	static boolean [] isVisited;
 	static int [] parent;
 	
 	static void Search(int node) {
-		
 		for(int nextNode : tree[node]) {
 			if(isVisited[nextNode]) continue;
 			isVisited[nextNode] = true;
@@ -24,15 +21,14 @@ public class B11725_트리의부모찾기_Sol {
 	}
 	
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
 		tree = new ArrayList[N + 1];
 		isVisited = new boolean [N+1];
 	
-	    for (int i = 0; i < tree.length; i++) {
-	        tree[i] = new ArrayList<>();
-	      }
+	        for (int i = 0; i < tree.length; i++) {
+			tree[i] = new ArrayList<>();
+	      	}
 		
 		for(int i=0; i<N-1; i++) {
 			int u = sc.nextInt();
