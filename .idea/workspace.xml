@@ -1,281 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="37588254-5381-48d2-aae5-0857a48f6161" name="Changes" comment="B1182_부분수열의합_김원우" />
+    <list default="true" id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Day5/B1182_부분수열의합/B1182_부분수열의합_김예린.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-03-09_PM_3_01_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-03-09_PM_3_01__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="eaa153fc-796d-4101-aae4-6d9fe6358190" />
-        <option name="url" value="https://github.com/gitJaen/KB_Algo2.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2MlMLsh809sEtlT4qsDgnFfmrgR" />
+  <component name="ProjectId" id="2N2GXwaaTsK7WXYnjUq9AwBbjEg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/edu/java/KB_Algo2/src/Day4/B1759_암호만들기&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\edu\java\KB_Algo2\src\Day4\B1759_암호만들기" />
-      <recent name="C:\edu\java\KB_Algo2\Day4" />
-      <recent name="C:\edu\java\KB_Algo2\src\Day2\B2164_카드2" />
-      <recent name="C:\edu\java\KB_Algo2\src\Day2\B17608_막대기" />
-      <recent name="C:\edu\java\KB_Algo2\src\Day1\B12891_DNA비밀번호" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Day4.B2961_도영이가_만든_맛있는_음식" />
-      <recent name="Day4.B15650_N과M1" />
-      <recent name="Day4.B9742_순열" />
-      <recent name="Day3.B2750_병합정렬" />
-      <recent name="Day3.B2750_퀵정렬" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="KB_Algo2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="KB_Algo2" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="37588254-5381-48d2-aae5-0857a48f6161" name="Changes" comment="" />
-      <created>1678337662384</created>
+      <changelist id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="" />
+      <created>1678854807593</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678337662384</updated>
-      <workItem from="1678337663519" duration="5972000" />
-      <workItem from="1678406054912" duration="8042000" />
-      <workItem from="1678665456961" duration="9273000" />
-      <workItem from="1678756783425" duration="10238000" />
-      <workItem from="1678784465963" duration="46000" />
-      <workItem from="1678784517712" duration="92000" />
-      <workItem from="1678784651423" duration="12000" />
-      <workItem from="1678784673118" duration="258000" />
-      <workItem from="1678784942000" duration="6000" />
-      <workItem from="1678838547277" duration="3149000" />
+      <updated>1678854807593</updated>
     </task>
-    <task id="LOCAL-00001" summary="B11659_구간합구하기4_김원우">
-      <created>1678337707559</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1678337707559</updated>
-    </task>
-    <task id="LOCAL-00002" summary="B11659_구간합구하기4_김원우">
-      <created>1678341717003</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1678341717003</updated>
-    </task>
-    <task id="LOCAL-00003" summary="B11659_구간합구하기4_김원우">
-      <created>1678341785733</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1678341785733</updated>
-    </task>
-    <task id="LOCAL-00004" summary="B2018_수들의합5_김원우">
-      <created>1678346546362</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1678346546362</updated>
-    </task>
-    <task id="LOCAL-00005" summary="B2018_수들의합5_김원우">
-      <created>1678349817576</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1678349817576</updated>
-    </task>
-    <task id="LOCAL-00006" summary="B2018_수들의합5_김원우">
-      <created>1678408521706</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1678408521706</updated>
-    </task>
-    <task id="LOCAL-00007" summary="B12891_DNA비밀번호_김원우">
-      <created>1678408537254</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1678408537254</updated>
-    </task>
-    <task id="LOCAL-00008" summary="B17608_막대기_김원우">
-      <created>1678415184054</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1678415184054</updated>
-    </task>
-    <task id="LOCAL-00009" summary="B2164_카드2_김원우">
-      <created>1678422651980</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1678422651980</updated>
-    </task>
-    <task id="LOCAL-00010" summary="B1874_스택수열_김원우">
-      <created>1678428764653</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1678428764653</updated>
-    </task>
-    <task id="LOCAL-00011" summary="B1158_요세푸스문제_김원우">
-      <created>1678432839887</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1678432839887</updated>
-    </task>
-    <task id="LOCAL-00012" summary="B2493_탑_김원우">
-      <created>1678667601413</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1678667601413</updated>
-    </task>
-    <task id="LOCAL-00013" summary="B2750_버블정렬_김원우">
-      <created>1678672997902</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1678672997902</updated>
-    </task>
-    <task id="LOCAL-00014" summary="B2750_선택정렬_김원우">
-      <created>1678674480771</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1678674480771</updated>
-    </task>
-    <task id="LOCAL-00015" summary="B2750_삽입정렬_김원우">
-      <created>1678681106385</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1678681106385</updated>
-    </task>
-    <task id="LOCAL-00016" summary="B2750_퀵정렬_김원우">
-      <created>1678687992246</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1678687992246</updated>
-    </task>
-    <task id="LOCAL-00017" summary="B2750_병합정렬_김원우">
-      <created>1678693491195</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1678693491195</updated>
-    </task>
-    <task id="LOCAL-00018" summary="B9742_순열_김원우">
-      <created>1678762291856</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1678762291856</updated>
-    </task>
-    <task id="LOCAL-00019" summary="B15650_N과M1_김원우">
-      <created>1678773070666</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1678773070666</updated>
-    </task>
-    <task id="LOCAL-00020" summary="B2961_도영이가만든맛있는음식_김원우">
-      <created>1678777732570</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1678777732570</updated>
-    </task>
-    <task id="LOCAL-00021" summary="B1759_암호만들기_김원우">
-      <created>1678784921269</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1678784921269</updated>
-    </task>
-    <task id="LOCAL-00022" summary="B1182_부분수열의합_김원우">
-      <created>1678839438114</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1678839438114</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="B11659_구간합구하기4_김원우" />
-    <MESSAGE value="B2018_수들의합5_김원우" />
-    <MESSAGE value="B12891_DNA비밀번호_김원우" />
-    <MESSAGE value="B17608_막대기_김원우" />
-    <MESSAGE value="B2164_카드2_김원우" />
-    <MESSAGE value="B1874_스택수열_김원우" />
-    <MESSAGE value="B1158_요세푸스문제_김원우" />
-    <MESSAGE value="B2493_탑_김원우" />
-    <MESSAGE value="B2750_버블정렬_김원우" />
-    <MESSAGE value="B2750_선택정렬_김원우" />
-    <MESSAGE value="B2750_삽입정렬_김원우" />
-    <MESSAGE value="B2750_퀵정렬_김원우" />
-    <MESSAGE value="B2750_병합정렬_김원우" />
-    <MESSAGE value="B9742_순열_김원우" />
-    <MESSAGE value="B15650_N과M1_김원우" />
-    <MESSAGE value="B2961_도영이가만든맛있는음식_김원우" />
-    <MESSAGE value="B1759_암호만들기_김원우" />
-    <MESSAGE value="B1182_부분수열의합_김원우" />
-    <option name="LAST_COMMIT_MESSAGE" value="B1182_부분수열의합_김원우" />
   </component>
 </project>
