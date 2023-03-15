@@ -10,7 +10,6 @@ import java.util.StringTokenizer;
 public class B1759_암호만들기_조성환 {
 
 	static char[] arr;
-	static char[] gather;
 	static int L;
 	static int C;
 	static int cnt_a, cnt_b;
