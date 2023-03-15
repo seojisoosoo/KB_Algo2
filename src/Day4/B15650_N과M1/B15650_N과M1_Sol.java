@@ -28,7 +28,7 @@ public class B15650_N과M1_Sol {
 
 	}
 
-	
+	c
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
