@@ -22,7 +22,7 @@ public class B1920_수찾기_김태선 {
 			if(target < arr[mid]) {
 				high = mid - 1;
 			}
-			else if(target < arr[mid]) {
+			else if(target > arr[mid]) {
 				low = mid + 1;
 			}
 			else {
@@ -39,7 +39,7 @@ public class B1920_수찾기_김태선 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		
-		int [] arr = new int [N];
+		arr = new int [N];
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for(int i = 0; i < N; i++) {
@@ -70,4 +70,3 @@ public class B1920_수찾기_김태선 {
 	
 	
 }
-
