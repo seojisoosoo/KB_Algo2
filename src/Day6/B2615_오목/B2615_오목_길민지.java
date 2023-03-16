@@ -60,7 +60,7 @@ public class B2615_오목_길민지 {
 				if (winner==0 && color!=0) {
 					if (arr[i][j-1]!=color) find(color, i, j, 0, 0);
 					if (arr[i-1][j]!=color)find(color, i, j, 1, 0);
-					if (i!=19 && arr[i+1][j-1]!=color)find(color, i, j, 2, 0);
+					if (((i!=19)?arr[i+1][j-1]:0)!=color)find(color, i, j, 2, 0);
 					if (arr[i-1][j-1]!=color)find(color, i, j, 3, 0);
 				}
 			}

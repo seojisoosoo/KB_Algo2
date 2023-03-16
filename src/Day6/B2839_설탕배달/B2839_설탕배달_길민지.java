@@ -1,15 +1,15 @@
 package Day6.B2839_설탕배달;
 
+// 1번
 import java.util.Scanner;
 
 public class B2839_설탕배달_길민지 {
 	static int N; 
-	static int K1, K2; 
 	static int cnt, remain;
 	
 	static void findCntMin() {
 		while(remain!=0) {
-			if (remain%5==0) {
+			if (remain%5==0) { 
 				cnt+=remain/5;
 				break;
 			}
@@ -29,8 +29,6 @@ public class B2839_설탕배달_길민지 {
 		
 		// 입력
 		N = sc.nextInt(); 
-		K1 = 5; // 봉지1 무게
-		K2 = 3; // 봉지2 무게
 		
 		// 최소 개수 찾기
 		remain = N;
@@ -42,22 +40,23 @@ public class B2839_설탕배달_길민지 {
 	}
 }
 
+
+// 2번
 /*
 import java.util.Scanner;
 
 public class B2839_설탕배달_길민지 {
 	static int N; 
-	static int K1, K2; 
 	static int cnt, remain;
 	
 	static void findCntMin() {
-		int maxK1 = N/K1; // 쓸 수 있는 K1 봉지의 최댓값
-		for (int i = maxK1; i>=0; i--) {
+		int max = N/5; // 쓸 수 있는 5kg 봉지의 최댓값
+		for (int i = max; i>=0; i--) {
 			remain = N;
-			remain -= K1*i;
+			remain -= 5*i;
 			cnt += i;
-			cnt += (remain/K2);
-			remain -= (remain/K2)*K2;
+			cnt += remain/3;
+			remain -= (remain/3)*3;
 			if (remain==0) break;
 			cnt = 0;
 		}
@@ -68,8 +67,6 @@ public class B2839_설탕배달_길민지 {
 		
 		// 입력
 		N = sc.nextInt(); 
-		K1 = 5; // 봉지1 무게
-		K2 = 3; // 봉지2 무게
 		
 		// 최소 개수 찾기
 		findCntMin();
@@ -81,5 +78,5 @@ public class B2839_설탕배달_길민지 {
 	}
 
 }
- */
+*/
 
