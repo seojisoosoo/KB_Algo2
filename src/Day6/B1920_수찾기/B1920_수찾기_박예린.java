@@ -11,7 +11,7 @@ public class B1920_수찾기_박예린 {
 	static int binarySearch(int [] arr, int target) {
 		int low = 0; // 시작 인덱스
 		int high = arr.length-1; // 끝 인덱스
-		int mid = 0;
+		int mid = 0;  
 		
 		while(low <= high) {
 			mid = (low + high) / 2;
