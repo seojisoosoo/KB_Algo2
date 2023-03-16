@@ -46,10 +46,13 @@ public class B1920_수찾기_서은효 {
 		int M = Integer.parseInt(bf.readLine());
 		token = new StringTokenizer(bf.readLine());
 		
-		Arrays.sort(arr);
+		//Arrays.sort(arr);
 		for(int i =0;i<M;i++) {
-			BinarySearch(Integer.parseInt(token.nextToken()));
+			//BinarySearch(Integer.parseInt(token.nextToken()));
+			int target_idx = Arrays.binarySearch(arr, Integer.parseInt(token.nextToken()));
 		}
+		
+		
 	}
 
 }
