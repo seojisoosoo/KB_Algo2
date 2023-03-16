@@ -1,4 +1,4 @@
-package Day3.B2750_선택정렬;
++package Day3.B2750_선택정렬;
 import java.util.Scanner;
 
 public class B2750_선택정렬_김태환 {
