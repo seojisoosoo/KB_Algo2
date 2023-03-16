@@ -31,8 +31,8 @@ public class B1931_회의실배정_조아영 {
 		});
 
 		for (int i = 0; i < N; i++) { // N=11
-			if ( start <= room[i][0]) {
-				start = room[i][1];
+			if (start <= room[i][0]) { // 현재 시작시간
+				start = room[i][1]; // 시작시간 = 직전 종료시간
 				cnt++;
 			}
 		}
