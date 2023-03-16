@@ -29,8 +29,8 @@ public class B1931_회의실배정_길민지 {
 			if(a1[1]==a2[1]) return Integer.compare(a1[0], a2[0]); // 종료 시간이 같다면 시작 시간 오름차순으로 정렬
 			else return Integer.compare(a1[1], a2[1]); // 종료 시간 오름차순으로 정렬
 		});
-		
-		int end = arr[0][1];
+		Arrays.sort(arr, (a1, a2)-> a1[1]==a2[1]?a1[0]-a2[0]:a1[1]-a2[1]);
+		int end = arr[0][1]; 
 		int cnt = 1;
 		
 		for (int i = 1; i<N; i++) {
