@@ -7,23 +7,27 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class B1920_수찾기_박창현 {
-    static int BinarySearch(int[] arr,int search){
-        int l=0;
-        int r=arr.length-1;
-        while (l<=r){
-            int m = (l+r)/2;
+    static int BinarySearch(int[] arr, int search) {
+        int l = 0;
+        int r = arr.length - 1;
+        while (l <= r) {
+            int m = (l + r) / 2;
             if (arr[m] == search) return m;
-            else if (arr[m]>search) r=m-1;
-            else l = m+1;
+            else if (arr[m] > search) r = m - 1;
+            else l = m + 1;
         }
         return -1;
     }
+
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         StringTokenizer st;
+
         int N = Integer.parseInt(bf.readLine());
-        int[] arrN = new int[N];
         st = new StringTokenizer(bf.readLine());
+
+        int[] arrN = new int[N];
         for (int i = 0; i < N; i++) {
             arrN[i] = Integer.parseInt(st.nextToken());
         }
@@ -32,12 +36,10 @@ public class B1920_수찾기_박창현 {
 
         int M = Integer.parseInt(bf.readLine());
         st = new StringTokenizer(bf.readLine());
-        int[] arrM = new int[M];
+
         for (int i = 0; i < M; i++) {
-            arrM[i] = Integer.parseInt(st.nextToken());
+            sb.append(BinarySearch(arrN, Integer.parseInt(st.nextToken())) < 0 ? 0 : 1).append("\n");
         }
-        for (int i = 0; i < M; i++) {
-            System.out.println(BinarySearch(arrN,arrM[i])<0?0:1);
-        }
+        System.out.println(sb);
     }
 }
