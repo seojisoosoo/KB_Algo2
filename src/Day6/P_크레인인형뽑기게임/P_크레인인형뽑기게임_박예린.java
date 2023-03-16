@@ -19,7 +19,7 @@ public class P_크레인인형뽑기게임_박예린 {
 			for(int j = 0; j < bLen; j++) {
 				doll = board[j][moves[i]-1];
 				if(doll != 0) {
-					if(i > 0 && stack.peek() == doll) {
+					if(!stack.isEmpty() && stack.peek() == doll) {
 						stack.pop();
 						count += 2;
 					} else stack.add(doll);
@@ -28,8 +28,6 @@ public class P_크레인인형뽑기게임_박예린 {
 				} else doll = 0;
 			}
 		}
-		System.out.println(stack);
 		System.out.println(count);
 	}
-
 }
