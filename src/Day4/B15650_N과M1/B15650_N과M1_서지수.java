@@ -17,7 +17,6 @@ public class B15650_N과M1_서지수 {
 		if(r==R) {
 			for(int i=0;i<R;i++) {
 				System.out.print(arr[select[i]]+" ");
-				
 			}
 			System.out.println();
 			return;
