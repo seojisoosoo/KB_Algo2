@@ -44,5 +44,4 @@ public class B1931_회의실배정_조아영 {
 		}
 		System.out.println(cnt);
 	}
-
 }
