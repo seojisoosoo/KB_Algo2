@@ -20,7 +20,6 @@ public class B1920_수찾기_이지은 {
 	static int N, M;
 	static int [] nArr;
 	static int [] mArr;
-	static StringBuilder sb;
 	
 	static int BinarySearch(int [] arr, int target) {
 		int low = 0;
