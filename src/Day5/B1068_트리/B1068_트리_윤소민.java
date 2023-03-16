@@ -14,12 +14,7 @@ public class B1068_트리_윤소민 {
 	static int rm;
 	
 	static void remove(int rm) {
-		if(node[rm].isEmpty()) node[rm].add(-1); //삭제 처리를 -1로
-		else {
-			for(int i : node[rm]) {
-				remove(i);
-			}
-		}
+		
 	}
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -47,9 +42,7 @@ public class B1068_트리_윤소민 {
 		//System.out.println(Arrays.toString(node));
 		
 		int cnt=0;
-		for(int i=0;i<n;i++) {
-			if(node[i].isEmpty()) cnt++;
-		}
+		
 		System.out.println(cnt);
 	}
 
