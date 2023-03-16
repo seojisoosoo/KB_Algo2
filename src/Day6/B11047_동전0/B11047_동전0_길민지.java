@@ -33,7 +33,6 @@ public class B11047_동전0_길민지 {
 		for (int i=0; i<N; i++) A[i] = Integer.parseInt(bf.readLine());
 		
 		// 최솟값 찾기
-		cnt = 0;
 		findMin();
 		
 		// 출력
