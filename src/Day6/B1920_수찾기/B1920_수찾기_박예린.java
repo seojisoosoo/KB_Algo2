@@ -42,15 +42,11 @@ public class B1920_수찾기_박예린 {
 		for(int i = 0; i < M; i++) {
 			arr2[i] = Integer.parseInt(st2.nextToken());
 		}
-		
 		Arrays.sort(arr1);
-		int [] res = new int[M];	
 		
 		for(int i = 0; i < M; i++) {
-			int tmp = binarySearch(arr1, arr2[i]);
-			if(tmp != -1) res[i] = 1;
+			if(binarySearch(arr1, arr2[i]) != -1) System.out.println(1);
+			else System.out.println(0);
 		}
-		System.out.println(Arrays.toString(res));
-
 	}
 }
