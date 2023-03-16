@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class B2839_설탕배탈_김예린 {
+public class B2839_설탕배달_김예린 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(bf.readLine());
@@ -25,4 +25,8 @@ public class B2839_설탕배탈_김예린 {
         }
     }
 }
+
+
+
+
 
