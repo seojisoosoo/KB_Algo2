@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
@@ -69,7 +70,10 @@ public class B1260_DFS와BFS_이지은 {
 			int b = Integer.parseInt(st.nextToken());
 			
 			graph[a].add(b);
+			graph[b].add(a);
 		}
+		
+		for (int i=0; i<N+1; i++) Collections.sort(graph[i]);
 		
 		isCheck = new boolean[N+1];
 		dfs(V);
