@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="P_크레인인형뽑기_김원우">
+    <list default="true" id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="B2110_공유기설치_김원우">
+      <change afterPath="$PROJECT_DIR$/src/Day7/B1991_트리순회/B1991_트리순회_김원우.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +23,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -48,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/edu/java/KB_Algo2/src/Day6/P_크레인인형뽑기게임",
+    "last_opened_file_path": "C:/edu/java/KB_Algo2/src/Day7/B1991_트리순회",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -57,12 +58,27 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\edu\java\KB_Algo2\src\Day7\B1991_트리순회" />
+      <recent name="C:\edu\java\KB_Algo2\src\Day6\B2110_공유기설치" />
       <recent name="C:\edu\java\KB_Algo2\src\Day6\P_크레인인형뽑기게임" />
       <recent name="C:\edu\java\KB_Algo2\src\Day6\B1920_수찾기" />
       <recent name="C:\edu\java\KB_Algo2\src\Day6\B1931_회의실배정" />
-      <recent name="C:\edu\java\KB_Algo2\src\Day6\B2839_설탕배달" />
-      <recent name="C:\edu\java\KB_Algo2\src\Day6\B11047_동전0" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="KB_Algo2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="KB_Algo2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +89,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678854807593</updated>
       <workItem from="1678924053256" duration="784000" />
-      <workItem from="1678924852849" duration="10885000" />
+      <workItem from="1678924852849" duration="10961000" />
+      <workItem from="1679012715877" duration="1546000" />
     </task>
     <task id="LOCAL-00001" summary="B1068_트리_김원우">
       <created>1678858072574</created>
@@ -124,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678954242127</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="B2110_공유기설치_김원우">
+      <created>1678958181411</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678958181411</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +161,7 @@
     <MESSAGE value="B1931_회의실배정_김원우" />
     <MESSAGE value="B1920_수찾기_김원우" />
     <MESSAGE value="P_크레인인형뽑기_김원우" />
-    <option name="LAST_COMMIT_MESSAGE" value="P_크레인인형뽑기_김원우" />
+    <MESSAGE value="B2110_공유기설치_김원우" />
+    <option name="LAST_COMMIT_MESSAGE" value="B2110_공유기설치_김원우" />
   </component>
 </project>
