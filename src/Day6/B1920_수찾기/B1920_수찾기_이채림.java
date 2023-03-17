@@ -10,21 +10,20 @@ public class B1920_수찾기_이채림 {
 	static int low;
 	static int high;
 
-	static void BinarySearch(int target) {
+	static int BinarySearch(int target) {
 		low = 0;
 		high = N - 1;
 		while (low <= high) {
 			int mid = (low + high) / 2;
 			if (arr[mid] == target) {
-				System.out.println(1);
-				return;
+				return 1;
 			}
 			else if (arr[mid] > target)
 				high = mid - 1;
 			else
 				low = mid + 1;
 		}
-		System.out.println(0);
+		return 0;
 	}
 
 	public static void main(String[] args) {
@@ -39,8 +38,6 @@ public class B1920_수찾기_이채림 {
 		Arrays.sort(arr);
 		
 		M = sc.nextInt(); // 배열 안에서 찾을 개수
-		
-		int result [] = new int [M];
 		
 		for (int i = 0; i < M; i++) {
 			int val = sc.nextInt();
