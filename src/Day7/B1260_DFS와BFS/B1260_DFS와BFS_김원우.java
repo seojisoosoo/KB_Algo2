@@ -72,7 +72,7 @@ public class B1260_DFS와BFS_김원우 {
         visited = new boolean[n+1];
         System.out.println();
         bfs(v);
-
+        br.close();
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.println(arr[i]);
 //        }
