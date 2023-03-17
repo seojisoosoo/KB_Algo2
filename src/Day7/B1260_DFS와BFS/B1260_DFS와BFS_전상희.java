@@ -7,6 +7,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Queue;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class B1260_DFS와BFS {
@@ -41,6 +42,25 @@ public class B1260_DFS와BFS {
 		}
 	}
 	
+	static void stackDFS(int startV) { // stack ver
+		Stack <Integer> stack = new Stack<>();
+		stack.push(startV);
+		
+		while(!stack.isEmpty()) {
+			int now = stack.pop();
+			
+			if(isVisited[now] == false) {
+				isVisited[now] = true;
+				System.out.print(now + " ");
+			}
+			
+			for(int nextNode : graph[now]) {
+				if(isVisited[nextNode]) continue;
+				stack.add(nextNode);
+			}
+		}		
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer token = new StringTokenizer(bf.readLine());
@@ -73,5 +93,14 @@ public class B1260_DFS와BFS {
 		System.out.println();
 		isVisited = new boolean[N+1]; // 초기화
 		BFS(V);
+		System.out.println();
+		isVisited = new boolean[N+1]; // 초기화
+		
+		for(int i=0; i<N+1; i++) {
+			Collections.sort(graph[i], Collections.reverseOrder());
+			//System.out.println(graph[i]);
+		} // 내림차순 정렬해야 돌아간다 
+		
+		stackDFS(V);
 	}
 }
