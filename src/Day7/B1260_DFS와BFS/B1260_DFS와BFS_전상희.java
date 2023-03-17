@@ -19,7 +19,7 @@ public class B1260_DFS와BFS {
 		
 		for(int nextNode : graph[startV]) {
 			if(isVisited[nextNode]) continue;
-			DFS(nextNode);
+			DFS(nextNode); // 재귀
 		}
 		
 	}
@@ -29,15 +29,15 @@ public class B1260_DFS와BFS {
 		que.add(startV);
 		isVisited[startV] = true;
 		while(!que.isEmpty()) {
-			int nowNode = que.poll();
+			int nowNode = que.poll(); // 큐에서 노드를 꺼낸 뒤
 			
 			System.out.print(nowNode + " ");
 			
 			for(int nextNode : graph[nowNode]) {
 				if(isVisited[nextNode]) continue;
 				isVisited[nextNode] = true;
-				que.add(nextNode);
-			}
+				que.add(nextNode); // 꺼낸 노드의 인접 노드를 큐에 삽입한다
+			} // 연결된 노드들을 따라가면서 하나씩 넣고 꺼내고 출력하길 반복
 		}
 	}
 	
@@ -62,16 +62,16 @@ public class B1260_DFS와BFS {
 			int v = Integer.parseInt(token.nextToken());
 			
 			graph[u].add(v);
-			graph[v].add(u);
+			graph[v].add(u); // 양쪽 노드에 서로를 추가
 		}
 		for(int i=0; i<N+1; i++) {
-			Collections.sort(graph[i]);
+			Collections.sort(graph[i]); // 정렬 안 하면 안 돌아감 !!
 			//System.out.println(graph[i]);
 		}
 		
 		DFS(V);
 		System.out.println();
-		isVisited = new boolean[N+1];
+		isVisited = new boolean[N+1]; // 초기화
 		BFS(V);
 	}
 }
