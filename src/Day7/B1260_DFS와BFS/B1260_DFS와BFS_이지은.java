@@ -13,12 +13,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class B1260_DFS와BFS_이지은 {
 	static int N, M, V;
-	static int [][] arr;
+	static ArrayList <Integer> graph[];
 	static StringBuilder sb = new StringBuilder();
 	static boolean [] isCheck;  //방문체크할 배열 
 	
@@ -27,9 +28,9 @@ public class B1260_DFS와BFS_이지은 {
 		isCheck[idx] = true;  //방문처리
 		sb.append(idx+ " ");
 		
-		for(int i=1; i<N+1; i++) {
+		for(int now : graph[idx]) {
 			//방문하지 않고, 간선이 존재할 때 
-			if(!isCheck[i] && arr[idx][i] == 1) dfs(i);
+			if(!isCheck[now]) dfs(now);
 		}
 	}
 	
@@ -42,10 +43,10 @@ public class B1260_DFS와BFS_이지은 {
 		while(!que.isEmpty()) { //큐가 빌때까지 
 			int nowIdx = que.poll();
 			sb.append(nowIdx+" ");
-			for(int i=1; i<N+1; i++) {
-				if(!isCheck[i] && arr[nowIdx][i] == 1) {
-					que.add(i);
-					isCheck[i] = true;
+			for(int now : graph[nowIdx]) {
+				if(!isCheck[now]) {
+					que.add(now);
+					isCheck[now] = true;
 				}
 			}
 		} //while 종료 
@@ -59,16 +60,15 @@ public class B1260_DFS와BFS_이지은 {
 		M = Integer.parseInt(st.nextToken()); //간선 개수 
 		V = Integer.parseInt(st.nextToken()); //탐색을 시작할 정점의 번호
 		
-		arr = new int[N+1][N+1];
+		graph = new ArrayList[N+1];
+		for(int i=0; i<N+1; i++) graph[i] = new ArrayList<>();
 		
 		for(int i=0; i<M; i++) {
 			st = new StringTokenizer(br.readLine()," ");
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			
-			//노드와 간선의 값 초기화 
-			arr[a][b] = 1;
-			arr[b][a] = 1;
+			graph[a].add(b);
 		}
 		
 		isCheck = new boolean[N+1];
