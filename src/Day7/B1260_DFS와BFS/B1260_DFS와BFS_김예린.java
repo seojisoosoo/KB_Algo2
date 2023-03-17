@@ -17,8 +17,8 @@ public class B1260_DFS와BFS_김예린 {
         System.out.print(V + " ");
 
         for (int i = 1; i <= N; i++) {
-            if (arr[V][i] == 1 && visited1[i] == false){
-                dfs(i);
+            if (arr[V][i] != 0 && visited1[i] == false){
+                dfs(arr[V][i]);
             }
         }
     }
@@ -33,10 +33,10 @@ public class B1260_DFS와BFS_김예린 {
             int x = queue.poll();
 
             for (int i = 1; i < arr.length; i++) {
-                if (arr[x][i] == 1 && visited2[i] == false){
-                    queue.add(i);
+                if (arr[x][i] != 0 && visited2[i] == false){
+                    queue.add(arr[x][i]);
                     visited2[i] = true;
-                    System.out.print(i + " ");
+                    System.out.print(arr[x][i] + " ");
                 }
             }
         }
@@ -56,8 +56,10 @@ public class B1260_DFS와BFS_김예린 {
             st = new StringTokenizer((bf.readLine())," ");
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            arr[a][b] = arr[b][a] = 1;
+            arr[a][b] = b;
+            arr[b][a] = a;
         }
+
 
         dfs(V);
         System.out.println();
