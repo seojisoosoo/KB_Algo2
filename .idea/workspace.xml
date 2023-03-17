@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="B2110_공유기설치_김원우">
-      <change afterPath="$PROJECT_DIR$/src/Day7/B1991_트리순회/B1991_트리순회_김원우.java" afterDir="false" />
+    <list default="true" id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="B1260_DFS와BFS_김원우">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/edu/java/KB_Algo2/src/Day7/B1991_트리순회",
+    "last_opened_file_path": "C:/edu/java/KB_Algo2/src/Day7/B1260_DFS와BFS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -58,11 +57,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\edu\java\KB_Algo2\src\Day7\B1260_DFS와BFS" />
       <recent name="C:\edu\java\KB_Algo2\src\Day7\B1991_트리순회" />
       <recent name="C:\edu\java\KB_Algo2\src\Day6\B2110_공유기설치" />
       <recent name="C:\edu\java\KB_Algo2\src\Day6\P_크레인인형뽑기게임" />
       <recent name="C:\edu\java\KB_Algo2\src\Day6\B1920_수찾기" />
-      <recent name="C:\edu\java\KB_Algo2\src\Day6\B1931_회의실배정" />
     </key>
   </component>
   <component name="RunManager">
@@ -90,7 +89,7 @@
       <updated>1678854807593</updated>
       <workItem from="1678924053256" duration="784000" />
       <workItem from="1678924852849" duration="10961000" />
-      <workItem from="1679012715877" duration="1546000" />
+      <workItem from="1679012715877" duration="2775000" />
     </task>
     <task id="LOCAL-00001" summary="B1068_트리_김원우">
       <created>1678858072574</created>
@@ -148,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678958181411</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="B1991_트리순회_김원우">
+      <created>1679016933607</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679016933607</updated>
+    </task>
+    <task id="LOCAL-00010" summary="B1260_DFS와BFS_김원우">
+      <created>1679018587131</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679018587131</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +175,8 @@
     <MESSAGE value="B1920_수찾기_김원우" />
     <MESSAGE value="P_크레인인형뽑기_김원우" />
     <MESSAGE value="B2110_공유기설치_김원우" />
-    <option name="LAST_COMMIT_MESSAGE" value="B2110_공유기설치_김원우" />
+    <MESSAGE value="B1991_트리순회_김원우" />
+    <MESSAGE value="B1260_DFS와BFS_김원우" />
+    <option name="LAST_COMMIT_MESSAGE" value="B1260_DFS와BFS_김원우" />
   </component>
 </project>
