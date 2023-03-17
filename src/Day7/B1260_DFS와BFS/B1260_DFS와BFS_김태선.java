@@ -32,6 +32,7 @@ public class B1260_DFS와BFS_김태선 {
 
 	
 	public static void bfs(int V) {
+		
 		que.add(V);
 		isVisited[V] = true;
 		
@@ -57,6 +58,7 @@ public class B1260_DFS와BFS_김태선 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
+		
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 		V = Integer.parseInt(st.nextToken());
@@ -65,14 +67,14 @@ public class B1260_DFS와BFS_김태선 {
 		isVisited = new boolean[N+1];
 		
 		for(int i = 0 ; i < M ; i ++) {
-			StringTokenizer str = new StringTokenizer(br.readLine());
+			st = new StringTokenizer(br.readLine());
 			
-			int a = Integer.parseInt(str.nextToken());
-			int b = Integer.parseInt(str.nextToken());
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
 			
 			arr[a][b] = arr[b][a] =  1;	
 		}
-			//sb.append("\n");
+			
 			dfs(V);
 			sb.append("\n");
 			isVisited = new boolean[N+1];
