@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="B11724_연결요소의개수_김원우">
+    <list default="true" id="05a4d3ba-0b0c-4106-827b-8cf397d10f40" name="Changes" comment="B2178_미로탐색_김원우">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,25 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/edu/java/KB_Algo2/src/Day7/B11724_연결요소의개수",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/edu/java/KB_Algo2/src/Day7/B2178_미로탐색&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\edu\java\KB_Algo2\src\Day7\B2178_미로탐색" />
       <recent name="C:\edu\java\KB_Algo2\src\Day7\B11724_연결요소의개수" />
       <recent name="C:\edu\java\KB_Algo2\src\Day7\B1260_DFS와BFS" />
       <recent name="C:\edu\java\KB_Algo2\src\Day7\B1991_트리순회" />
       <recent name="C:\edu\java\KB_Algo2\src\Day6\B2110_공유기설치" />
-      <recent name="C:\edu\java\KB_Algo2\src\Day6\P_크레인인형뽑기게임" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,7 +89,8 @@
       <updated>1678854807593</updated>
       <workItem from="1678924053256" duration="784000" />
       <workItem from="1678924852849" duration="10961000" />
-      <workItem from="1679012715877" duration="11402000" />
+      <workItem from="1679012715877" duration="11477000" />
+      <workItem from="1679270578935" duration="1939000" />
     </task>
     <task id="LOCAL-00001" summary="B1068_트리_김원우">
       <created>1678858072574</created>
@@ -175,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679038392891</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="B2178_미로탐색_김원우">
+      <created>1679042803517</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679042803517</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +211,7 @@
     <MESSAGE value="B1991_트리순회_김원우" />
     <MESSAGE value="B1260_DFS와BFS_김원우" />
     <MESSAGE value="B11724_연결요소의개수_김원우" />
-    <option name="LAST_COMMIT_MESSAGE" value="B11724_연결요소의개수_김원우" />
+    <MESSAGE value="B2178_미로탐색_김원우" />
+    <option name="LAST_COMMIT_MESSAGE" value="B2178_미로탐색_김원우" />
   </component>
 </project>
