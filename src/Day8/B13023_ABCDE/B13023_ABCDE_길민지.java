@@ -19,7 +19,7 @@ public class B13023_ABCDE_길민지 {
 		}
 		
 		for (int i : arr[start]) { // 방문하지 않은 인접 노드 탐색
-			if (isSelected[i]==true) continue;
+			if (isSelected[i]) continue;
 			isSelected[i] = true; // 방문 노드 저장
 			findFriends(i, r+1);
 			isSelected[i] = false; // 되돌아온 노드 삭제
