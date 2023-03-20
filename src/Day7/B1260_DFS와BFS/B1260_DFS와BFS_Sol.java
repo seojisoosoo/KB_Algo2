@@ -30,12 +30,12 @@ public class B1260_DFS와BFS_Sol {
 		que.add(start);
 		isVisited[start] = true;
 		while(!que.isEmpty()) {
-			int nowNode = que.poll();
-			System.out.print(nowNode + " ");
+			int nowNode = que.poll();	// 현재노드 꺼냄
+			System.out.print(nowNode + " ");	
 			for(int nextNode : graph[nowNode]) {
-				if(isVisited[nextNode] == true) continue;
-				isVisited[nextNode] = true;
-				que.add(nextNode);
+				if(isVisited[nextNode] == true) continue;	// 중복이면 skip
+				isVisited[nextNode] = true;			// 탐색하면 중복마킹
+				que.add(nextNode);					// 큐에 
 			}
 		}
 	}
