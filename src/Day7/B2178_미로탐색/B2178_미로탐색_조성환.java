@@ -29,7 +29,7 @@ public class B2178_미로탐색_조성환 {
 				int new_y = dy[i] + nowNode[0];
 				int new_x = dx[i] + nowNode[1];
 				if (new_y >= 0 && new_y < N && new_x >= 0 && new_x < M) {
-					if (isVisited[new_y][new_x] != true && maze[new_y][new_x] == 1) {
+					if (isVisited[new_y][new_x] != true ) {
 						isVisited[new_y][new_x] = true;
 						maze[new_y][new_x] += maze[nowNode[0]][nowNode[1]];
 						que.add(new int[] { new_y, new_x });
