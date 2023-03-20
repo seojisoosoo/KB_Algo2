@@ -1,4 +1,4 @@
-package Day8.B1697_¼û¹Ù²ÀÁú;
+package Day8.B1697_ìˆ¨ë°”ê¼­ì§ˆ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,23 +7,23 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class B1697_¼û¹Ú²ÀÁú_±èÇıÀÎ{
+public class B1697_ìˆ¨ë°•ê¼­ì§ˆ_ê¹€í˜œì¸{
 
-	static int n, m;
-	static int[] arr = new int[100001];
+	static int n, k;  //ìˆ˜ë¹ˆì´, ë™ìƒìœ„ì¹˜
+	static int[] arr = new int[100001];  //ë²”ìœ„ì„¤ì •
 
 	public static void searchBFS(int num) {
 		Queue<Integer> que = new ArrayDeque<>();
 		que.add(num);
-		arr[num] = 1; // ÃÊ±â°ª
+		arr[num] = 1; // ìˆ˜ë¹ˆì´ ìœ„ì¹˜ ì´ˆê¸°í™”
 
 		// BFS
 		while (!que.isEmpty()) {
 			int now = que.poll();
 			for (int i = 0; i < 3; i++) {
-				// ´ÙÀ½ÁÂÇ¥ °è»ê
+				// ë‹¤ìŒì¢Œí‘œ ê³„ì‚°
 				int next;
-				// ¾ÕµÚ·Î ¿òÁ÷ÀÌ´Â°Å ¼ø°£ÀÌµ¿ ÇÒ ¼ö ÀÖ´Â °Å
+				// ì•ë’¤ë¡œ ì›€ì§ì´ëŠ”ê±° ìˆœê°„ì´ë™ í•  ìˆ˜ ìˆëŠ” ê±°
 				if (i == 0)
 					next = now + 1;
 				else if (i == 1)
@@ -33,7 +33,7 @@ public class B1697_¼û¹Ú²ÀÁú_±èÇıÀÎ{
 				}
 				
 				
-				if (next == m) {
+				if (next == m) {  //ìˆ˜ë¹ˆì´ì™€ ë™ìƒì˜ ìœ„ì¹˜ê°€ ê°™ìœ¼ë©´ ì´ë™í•  í•„ìš”ê°€ ì—†ìŒ
 					System.out.println(arr[now]);
 					return;
 				}
@@ -52,9 +52,9 @@ public class B1697_¼û¹Ú²ÀÁú_±èÇıÀÎ{
 		n = Integer.parseInt(st.nextToken());
 		m = Integer.parseInt(st.nextToken());
 		
-		if(n==m) { //À§Ä¡°°À» ¶§
+		if(n==m) { //ìœ„ì¹˜ê°™ì„ ë–„ 
 			System.out.println(0);
-		}else searchBFS(n);
+		}else searchBFS(n); 
 
 	}
 }
