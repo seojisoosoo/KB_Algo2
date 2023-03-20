@@ -22,7 +22,7 @@ public class B2178_미로탐색_이지은 {
 	static boolean [][] isVisited;
 	
 	static void bfs(int x, int y) {
-		Queue <int []> que = new ArrayDeque();
+		Queue <int []> que = new ArrayDeque<>();
 		que.offer(new int [] {x, y});
 		isVisited[x][y] = true; //방문처리 
 		
@@ -32,7 +32,7 @@ public class B2178_미로탐색_이지은 {
 				int nx = now[0] + dx[i];
 				int ny = now[1] + dy[i];
 				if(nx>=0 && nx<N && ny>=0 && ny<M) { //이동 가능한 칸일 동안
-					if(map[nx][ny] == 1) {
+					if(map[nx][ny] == 1 && !isVisited[nx][ny]) {
 						isVisited[nx][ny] = true; //방문처리 
 						que.offer(new int [] {nx, ny});
 						map[nx][ny] = map[now[0]][now[1]] +1;  //카운트 업 
