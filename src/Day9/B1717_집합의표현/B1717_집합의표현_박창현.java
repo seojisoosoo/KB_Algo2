@@ -1,11 +1,11 @@
-package Day9.B1717_집합의_표현;
+package Day9.B1717_집합의표현;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class B1717_집합의_표현_박창현 {
+public class B1717_집합의표현_박창현 {
     static int[] parent;
 
     public static int find(int x) {
