@@ -23,7 +23,9 @@ public class B14502_연구소_김원우 {
             for (int j = 0; j < m; j++) {
                 tmpList[i][j] = arr[i][j];
             }
-        }
+        } // 1차원배열은 clone을 쓰면 깊은복사가 되지만 2차원배열은 깊은복사가 안됐다..
+        // 파이썬이랑 다른 부분..
+        // 이거때문에 삽질했다.
 
 
         Queue<int[]> q = new LinkedList<>();
