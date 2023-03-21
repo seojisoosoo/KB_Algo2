@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class B9663_NQueen_박상희 {
-static int N;
+	static int N;
 	
 	static boolean isSelected[];
 	static int selectQueen[];

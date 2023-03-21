@@ -11,7 +11,7 @@ public class B9663_NQueen_Sol {
 		
 	public static boolean checkValid(int x , int y) {
 		for(int i=0; i<N; i++) {
-			if(y == i || select[i] == -1) continue;						// 자기자신이나 안 고른 경우는 pass
+			if(y == i || select[i] == -1) continue;				// 자기자신이나 안 고른 경우는 pass
 			if(Math.abs(y - i) == Math.abs(x - select[i])) return false;	// 대각선 걸리는 경우
 		}
 		return true;
@@ -27,8 +27,8 @@ public class B9663_NQueen_Sol {
 		}
 		
 		for(int i=0; i<N; i++) {
-			if(isSelected[i]) continue;			// 중복 방지
-//			if(!checkValid(i,cnt)) continue;	// 유효하지 않은 경우 ~ 퀸끼리 대각선에 걸리는 경우 Skip
+			if(isSelected[i]) continue;		// 중복 방지
+			if(!checkValid(i,cnt)) continue;	// 유효하지 않은 경우 ~ 퀸끼리 대각선에 걸리는 경우 Skip
 			
 			// 마킹
 			isSelected[i] = true;
