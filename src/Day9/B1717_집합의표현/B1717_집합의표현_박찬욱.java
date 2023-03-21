@@ -53,7 +53,7 @@ public class B1717_집합의표현_박찬욱 {
 			
 			if(plays == 0) { // a가 포함되어 있는 집합과 b가 포함되어 있는 집합을 합친다
 				union(a, b);
-			}else { // 두 원소가 같은 집합에 포함되어 있는지를 확인
+			} else { // 두 원소가 같은 집합에 포함되어 있는지를 확인
 				if(find(a) == find(b)) System.out.println("yes");
 				else System.out.println("no");
 			}
