@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class B1325_효율적인해킹_김준서 {
     static int max,N;
     static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
     static boolean[] visited;
