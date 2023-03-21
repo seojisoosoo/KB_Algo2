@@ -29,7 +29,7 @@ public class B9663_Nqueen_김혜인 {
 		for(int i=0; i<k; i++) {  //첫번쨰 depth는0이들어와서 조건이 성립이 안됨 >> 그래서 1부터가 아니라 0으로 해서 1을받음
 			if(arr[i] == arr[k]) { //퀸이 같은 인덱스에 있는게 안됨. 그거 확인해줌
 				return false;
-			}else if( Math.abs(arr[i] - arr[k]) == Math.abs(i-k)){
+			}else if( Math.abs(arr[i] - arr[k]) == Math.abs(i-k)){ //대각선 공식
 				return false;
 			}
 		}
