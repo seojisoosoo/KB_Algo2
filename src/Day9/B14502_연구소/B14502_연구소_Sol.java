@@ -1,5 +1,4 @@
 package Day9.B14502_연구소;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -57,10 +56,8 @@ public class B14502_연구소_Sol {
 		for(int y=0; y<N; y++) 
 			for(int x=0; x<M; x++) 
 				if(temp_board[y][x] == 0) cnt++;
-		
 		return cnt;
 	}
-	
 	
 	// (x,y) 좌표에 바이러스 발생시키는 함수
 	static void virus(int x , int y , int [][] temp) {
@@ -93,7 +90,6 @@ public class B14502_연구소_Sol {
 		
 		makeWall(0);
 		System.out.println(ans);
-		
 		
 	}
 }
