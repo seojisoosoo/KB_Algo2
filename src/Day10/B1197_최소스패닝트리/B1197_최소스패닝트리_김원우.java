@@ -36,10 +36,8 @@ public class B1197_최소스패닝트리_김원우 {
 
     static int v;
     static int e;
-
     static Edge [] edges;
 
-    static ArrayList<int []> [] arr;
     static int [] parent;
     static int find(int x) {
         if (x == parent[x]) {
