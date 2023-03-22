@@ -4,10 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.StringTokenizer;
 
 public class B1197_최소스패닝트리_박창현 {
     static int[] parent;
+
     static class Edge {
         int start;
         int end;
@@ -21,11 +23,7 @@ public class B1197_최소스패닝트리_박창현 {
 
         @Override
         public String toString() {
-            return "Edge{" +
-                    "start=" + start +
-                    ", end=" + end +
-                    ", weight=" + weight +
-                    '}';
+            return "Edge{" + "start=" + start + ", end=" + end + ", weight=" + weight + '}';
         }
     }
 
@@ -35,6 +33,7 @@ public class B1197_최소스패닝트리_박창현 {
         }
         return parent[x] = find(parent[x]);
     }
+
     public static void union(int x, int y) {
         x = find(x);
         y = find(y);
@@ -48,7 +47,6 @@ public class B1197_최소스패닝트리_박창현 {
     }
 
 
-
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
@@ -57,7 +55,7 @@ public class B1197_최소스패닝트리_박창현 {
         int V = Integer.parseInt(st.nextToken());
         int E = Integer.parseInt(st.nextToken());
 
-        parent = new int[V+1];
+        parent = new int[V + 1];
         Edge[] edges = new Edge[E];
 
         for (int i = 0; i < E; i++) {
@@ -65,27 +63,21 @@ public class B1197_최소스패닝트리_박창현 {
             int s = Integer.parseInt(st.nextToken());
             int e = Integer.parseInt(st.nextToken());
             int w = Integer.parseInt(st.nextToken());
-            edges[i] = new Edge(s,e,w);
+            edges[i] = new Edge(s, e, w);
         }
-
-        for (int i = 0; i < V+1; i++) {
+        for (int i = 0; i < V + 1; i++) {
             parent[i] = i;
         }
-//        boolean checkFlag = true;
-//        while (checkFlag){
-//
-//        }
-        Arrays.sort(edges, (o1, o2) -> o1.weight-o2.weight);
-        System.out.println(Arrays.toString(edges));
+        Arrays.sort(edges, Comparator.comparingInt(o -> o.weight));
+//        System.out.println(Arrays.toString(edges));
 
         int result = 0;
 
         for (int i = 0; i < E; i++) {
-            if(find(edges[i].start) == find(edges[i].end)) continue;
-            union(edges[i].start,edges[i].end);
-            result+=edges[i].weight;
+            if (find(edges[i].start) == find(edges[i].end)) continue;
+            union(edges[i].start, edges[i].end);
+            result += edges[i].weight;
         }
-//        Arrays.sort(edges, (o1, o2) -> o2.weight-o1.weight);
 //        System.out.println(Arrays.toString(edges));
         System.out.println(result);
     }
